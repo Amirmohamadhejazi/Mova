@@ -6,22 +6,11 @@ import { BsBookmarkPlus, BsBookmarkCheck } from 'react-icons/bs';
 import { LiaCertificateSolid } from 'react-icons/lia';
 import { FiSettings } from 'react-icons/fi';
 import { HiOutlineLogout } from 'react-icons/hi';
+import { TTabsDataProps } from './resource/types';
 
 // Define an interface for the items within tabsData
-interface TabItem {
-    name: string;
-    link: string;
-    Icon: JSX.Element;
-    id: number;
-}
 
-type TtabsDataProps = {
-    items: TabItem[]; // Specify that 'items' is an array of TabItem
-    library: string;
-    id: number;
-};
-
-const tabsData: TtabsDataProps[] = [
+const tabsData: TTabsDataProps[] = [
     {
         items: [
             { name: 'خانه', link: '/home', Icon: <RiHome2Line />, id: 0 },
@@ -38,7 +27,7 @@ const tabsData: TtabsDataProps[] = [
             { name: 'دانلود شده ها', link: '/home5', Icon: <HiOutlineDownload />, id: 2 },
             { name: 'علاقه مندی', link: '/home5', Icon: <AiOutlineHeart />, id: 3 },
             { name: 'لیست های پخش', link: '/home6', Icon: <BsBookmarkPlus />, id: 4 },
-            { name: 'دیده شده', link: '/home8', Icon: <BsBookmarkCheck />, id: 6 },
+            { name: 'دیده شده', link: '/home8', Icon: <BsBookmarkCheck />, id: 5 },
         ],
         id: 1,
         library: 'آرشیو',
@@ -48,7 +37,7 @@ const tabsData: TtabsDataProps[] = [
             { name: 'تنظیمات', link: '/setting', Icon: <FiSettings />, id: 0 },
             { name: 'خروج', link: '/home4', Icon: <HiOutlineLogout />, id: 1 },
         ],
-        id: 1,
+        id: 2,
         library: 'عمومی',
     },
 ];

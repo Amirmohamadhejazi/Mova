@@ -3,24 +3,12 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { RxCrossCircled } from 'react-icons/rx';
 import { tabsData } from './data';
-
-export type TabItem = {
-    name: string;
-    link: string;
-    Icon: JSX.Element;
-    id: number;
-};
-
-export type T_tabsDataProps = {
-    items: TabItem[];
-    library: string;
-    id: number;
-};
+import { ITabItem, TTabsDataProps } from './resource/types';
 
 function Sidebar() {
     const pathname = usePathname();
 
-    const HandlerLink = ({ children, items }: { children: React.JSX.Element; items: TabItem }) => {
+    const HandlerLink = ({ children, items }: { children: React.JSX.Element; items: ITabItem }) => {
         const isActive = pathname === items?.link;
         return isActive ? children : <Link href={items?.link}>{children}</Link>;
     };
@@ -31,10 +19,10 @@ function Sidebar() {
                 <div className="lg:hidden border-b py-4 px-4">
                     <RxCrossCircled className="cursor-pointer mr-auto" size={24} />
                 </div>
-                <div className="flex flex-col h-full gap-y-12">
-                    {tabsData.map((itemsMain: T_tabsDataProps) => (
+                <div className="flex flex-col h-full pt-8 pr-6 gap-y-12">
+                    {tabsData.map((itemsMain: TTabsDataProps) => (
                         <div className="flex flex-col" key={itemsMain.id}>
-                            <span className="text-[#F9F9F9] px-2 mb-2 font-light ">{itemsMain.library}</span>
+                            <span className="text-[#F9F9F9] px-2 mb-2 font-light text-sm ">{itemsMain.library}</span>
                             {itemsMain.items.map((items) => (
                                 <HandlerLink key={items.id} items={items}>
                                     <>
@@ -46,10 +34,10 @@ function Sidebar() {
                                             } `}
                                             key={items.id}
                                         >
-                                            <div className="flex w-full relative items-center  p-2  gap-x-1">
+                                            <div className="flex w-full relative items-center  p-2  gap-x-2">
                                                 <div className="text-2xl">{items.Icon}</div>
                                                 <p
-                                                    className={`font-bold  ${
+                                                    className={`font-semibold text-md ${
                                                         pathname === items?.link && 'text-yellow-400'
                                                     }`}
                                                 >
