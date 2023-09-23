@@ -31,10 +31,10 @@ function Sidebar() {
                 <div className="lg:hidden border-b py-4 px-4">
                     <RxCrossCircled className="cursor-pointer mr-auto" size={24} />
                 </div>
-                <div className="flex flex-col gap-y-12">
+                <div className="flex flex-col h-full gap-y-12">
                     {tabsData.map((itemsMain: T_tabsDataProps) => (
                         <div className="flex flex-col" key={itemsMain.id}>
-                            <span className="text-gray-400 px-2 font-medium ">{itemsMain.library}</span>
+                            <span className="text-[#F9F9F9] px-2 mb-2 font-light ">{itemsMain.library}</span>
                             {itemsMain.items.map((items) => (
                                 <HandlerLink key={items.id} items={items}>
                                     <>
@@ -47,9 +47,9 @@ function Sidebar() {
                                             key={items.id}
                                         >
                                             <div className="flex w-full relative items-center  p-2  gap-x-1">
-                                                <div className='text-2xl'>{items.Icon}</div>
+                                                <div className="text-2xl">{items.Icon}</div>
                                                 <p
-                                                    className={`font-medium  ${
+                                                    className={`font-bold  ${
                                                         pathname === items?.link && 'text-yellow-400'
                                                     }`}
                                                 >

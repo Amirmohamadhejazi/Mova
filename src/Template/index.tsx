@@ -1,3 +1,3 @@
 import HomeTemplate from './HomeTemplate/HomeTemplate';
-
-export { HomeTemplate };
+import SettingTemplate from './SettingTemplate/SettingTemplate';
+export { HomeTemplate, SettingTemplate };
