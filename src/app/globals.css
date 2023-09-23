@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+
+* {
+  @apply font-yekan;
+}
+
+body{
+  background-color: #020916;
+  color:#F9F9F9
+}
