@@ -1,0 +1,50 @@
+[
+    {
+        "target": "karina@kpmg.com.au",
+        "code": "4894156",
+        "createdAt": "7/18/2023",
+        "expireAt": "7/18/2023",
+        "usedAt": "7/18/2023",
+        "status": false
+    },
+    {
+        "target": "roberdoe@gmail.com",
+        "code": "4813920",
+        "createdAt": "7/18/2023",
+        "expireAt": "7/18/2023",
+        "usedAt": "7/18/2023",
+        "status": false
+    },
+    {
+        "target": "Nei@airplus.co.uk",
+        "code": "9130793",
+        "createdAt": "7/18/2023",
+        "expireAt": "7/18/2023",
+        "usedAt": "7/18/2023",
+        "status": true
+    },
+    {
+        "target": "+1 604 555 5555",
+        "code": "2902884",
+        "createdAt": "7/18/2023",
+        "expireAt": "7/18/2023",
+        "usedAt": "7/18/2023",
+        "status": true
+    },
+    {
+        "target": "+1 406 444 4444",
+        "code": "4894156",
+        "createdAt": "7/18/2023",
+        "expireAt": "7/18/2023",
+        "usedAt": "7/18/2023",
+        "status": true
+    },
+    {
+        "target": "karina@kpmg.com.au",
+        "code": "4894156",
+        "createdAt": "7/18/2023",
+        "expireAt": "7/18/2023",
+        "usedAt": "7/18/2023",
+        "status": true
+    }
+]

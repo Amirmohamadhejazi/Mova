@@ -1,0 +1,7 @@
+.mantine-ltr-1avyp1d {
+    @apply !transition-all !duration-300 !delay-300 !block;
+}
+
+.mantine-ltr-1avyp1d > div {
+    @apply !transition-all !duration-300;
+}

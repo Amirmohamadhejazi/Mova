@@ -1,0 +1,57 @@
+[
+    {
+        "fileName": "FureStibe requirements 1",
+        "status": false,
+        "startedAt": "9/11/2023",
+        "endedAt": "9/15/2023",
+        "maxFileSize": "100KB",
+        "extension": "JPG",
+        "description": "Empty",
+        "sort": "1",
+        "isRequired": true
+    },
+    {
+        "fileName": "FureStibe requirements 2",
+        "status": true,
+        "startedAt": "9/11/2023",
+        "endedAt": "9/15/2023",
+        "maxFileSize": "100KB",
+        "extension": "JPG",
+        "description": "Empty",
+        "sort": "1",
+        "isRequired": false
+    },
+    {
+        "fileName": "FureStibe requirements 3",
+        "status": false,
+        "startedAt": "9/11/2023",
+        "endedAt": "9/15/2023",
+        "maxFileSize": "100KB",
+        "extension": "JPG",
+        "description": "Empty",
+        "sort": "1",
+        "isRequired": true
+    },
+    {
+        "fileName": "FureStibe requirements 4",
+        "status": true,
+        "startedAt": "9/11/2023",
+        "endedAt": "9/15/2023",
+        "maxFileSize": "100KB",
+        "extension": "JPG",
+        "description": "Empty",
+        "sort": "1",
+        "isRequired": false
+    },
+    {
+        "fileName": "FureStibe requirements 5",
+        "status": false,
+        "startedAt": "9/11/2023",
+        "endedAt": "9/15/2023",
+        "maxFileSize": "100KB",
+        "extension": "JPG",
+        "description": "Empty",
+        "sort": "1",
+        "isRequired": true
+    }
+]

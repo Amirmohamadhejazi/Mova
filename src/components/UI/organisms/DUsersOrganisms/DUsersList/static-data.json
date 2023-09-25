@@ -1,0 +1,50 @@
+[
+    {
+        "userId": "1",
+        "fullName": "Karina Clark",
+        "email": "user@example.com",
+        "role": "Admin",
+        "status": true,
+        "image": ""
+    },
+    {
+        "userId": "2",
+        "fullName": "Sean Bean",
+        "email": "user@example.com",
+        "role": "SPM",
+        "status": false,
+        "image": ""
+    },
+    {
+        "userId": "3",
+        "fullName": "Alan Johnson",
+        "email": "user@example.com",
+        "role": "PM",
+        "status": false,
+        "image": ""
+    },
+    {
+        "userId": "4",
+        "fullName": "Robert Doe",
+        "email": "user@example.com",
+        "role": "Team Lead",
+        "status": true,
+        "image": ""
+    },
+    {
+        "userId": "5",
+        "fullName": "Olivia Wild",
+        "email": "user@example.com",
+        "role": "Team Lead",
+        "status": false,
+        "image": ""
+    },
+    {
+        "userId": "6",
+        "fullName": "Adam Williams",
+        "email": "user@example.com",
+        "role": "Team Member",
+        "status": true,
+        "image": ""
+    }
+]

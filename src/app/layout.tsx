@@ -1,10 +1,26 @@
-import './globals.css';
-import { yekan } from '../../public/utils/font/font';
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-    return (
-        <html lang="fa" dir="rtl" className={yekan.variable}>
-            <body>{children}</body>
-        </html>
-    );
+import { type FC } from 'react'
+import { type Metadata } from 'next'
+
+import { type ILayoutProps } from '@core/types'
+// import { interFont } from '@core/utils'
+import { yekan } from '@core/utils/fonts/fonts.utils'
+
+import '@styles/globals.css'
+
+import Providers from './Providers/Providers'
+
+export const metadata: Metadata = {
+    title: 'QTO',
 }
 
+const RootLayout: FC<ILayoutProps> = ({ children }) => {
+    return (
+        <html lang='fa' className={yekan.variable}>
+            <body dir='rtl'>
+                <Providers>{children}</Providers>
+            </body>
+        </html>
+    )
+}
+
+export default RootLayout

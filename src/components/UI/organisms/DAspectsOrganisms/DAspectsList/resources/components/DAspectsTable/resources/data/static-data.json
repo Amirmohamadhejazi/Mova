@@ -1,0 +1,32 @@
+[
+    {
+        "aspectName": "Measuring",
+        "aspectImage": "/icons/aspects/measuring.svg",
+        "aspectSort": 1,
+        "aspectStatus": true
+    },
+    {
+        "aspectName": "Planning",
+        "aspectImage": "/icons/aspects/planning.svg",
+        "aspectSort": 2,
+        "aspectStatus": true
+    },
+    {
+        "aspectName": "AutoCad",
+        "aspectImage": "/icons/aspects/auto-cad.svg",
+        "aspectSort": 3,
+        "aspectStatus": false
+    },
+    {
+        "aspectName": "Design",
+        "aspectImage": "/icons/aspects/design.svg",
+        "aspectSort": 4,
+        "aspectStatus": true
+    },
+    {
+        "aspectName": "Decoration",
+        "aspectImage": "/icons/aspects/decoration.svg",
+        "aspectSort": 5,
+        "aspectStatus": false
+    }
+]

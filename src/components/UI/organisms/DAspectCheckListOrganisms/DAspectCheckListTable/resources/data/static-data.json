@@ -1,0 +1,57 @@
+[
+    {
+        "fileName": "Take Picture",
+        "status": false,
+        "startedAt": "9/11/2023",
+        "endedAt": "9/15/2023",
+        "maxFileSize": "100KB",
+        "extension": "JPG",
+        "description": "Empty",
+        "sort": "1",
+        "isRequired": true
+    },
+    {
+        "fileName": "clean lobby",
+        "status": true,
+        "startedAt": "9/11/2023",
+        "endedAt": "9/15/2023",
+        "maxFileSize": "100KB",
+        "extension": "JPG",
+        "description": "Empty",
+        "sort": "1",
+        "isRequired": false
+    },
+    {
+        "fileName": "upload plan ",
+        "status": false,
+        "startedAt": "9/11/2023",
+        "endedAt": "9/15/2023",
+        "maxFileSize": "100KB",
+        "extension": "JPG",
+        "description": "Empty",
+        "sort": "1",
+        "isRequired": true
+    },
+    {
+        "fileName": "make DWG File",
+        "status": true,
+        "startedAt": "9/11/2023",
+        "endedAt": "9/15/2023",
+        "maxFileSize": "100KB",
+        "extension": "JPG",
+        "description": "Empty",
+        "sort": "1",
+        "isRequired": false
+    },
+    {
+        "fileName": "export Project",
+        "status": false,
+        "startedAt": "9/11/2023",
+        "endedAt": "9/15/2023",
+        "maxFileSize": "100KB",
+        "extension": "JPG",
+        "description": "Empty",
+        "sort": "1",
+        "isRequired": true
+    }
+]

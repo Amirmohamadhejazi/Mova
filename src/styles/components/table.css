@@ -1,0 +1,26 @@
+/*.mantine-ltr-187tnfa > thead > tr > th,
+table > thead > tr > th {
+    @apply first:px-0;
+} */
+
+.mantine-ltr-Paper-root {
+    @apply !border-none;
+}
+
+.mantine-ltr-187tnfa > thead > tr > th > .mantine-TableHeadCell-Content,
+table > thead > tr > th > .mantine-TableHeadCell-Content {
+    @apply justify-center text-sm !text-[15px] text-center font-semibold;
+}
+
+.mantine-ltr-187tnfa > tbody > tr > td {
+    @apply text-sm !text-[15px] text-center font-medium !border-none;
+}
+
+.Table_Selector_2419
+    > .mantine-ltr-Paper-root
+    > .mantine-ltr-vl6xmj
+    > .mantine-ltr-1n3zr08
+    .mantine-ltr-d3oese
+    > .mantine-ltr-InputWrapper-root {
+    @apply hidden invisible opacity-0;
+}
