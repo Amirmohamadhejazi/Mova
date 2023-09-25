@@ -15,12 +15,12 @@ const DHomeSidebar: FC = () => {
     }
 
     return (
-        <aside className={`shrink-0 lg:w-[250px]`}>
+        <aside className={`shrink-0 hidden lg:block lg:w-[250px]`}>
             <div className='h-full sticky top-0'>
                 <div className='lg:hidden border-b py-4 px-4'>
                     <RxCrossCircled className='cursor-pointer mr-auto' size={24} />
                 </div>
-                <div className='flex flex-col h-full pt-8 pr-6 gap-y-12'>
+                <div className='flex flex-col h-full pt-4 pr-6 gap-y-12'>
                     {tabsData.map((itemsMain: TDSidebarTabsDataProps) => (
                         <div className='flex flex-col' key={itemsMain.id}>
                             <span className='text-[#F9F9F9] px-2 mb-2 font-light text-sm '>{itemsMain.library}</span>
