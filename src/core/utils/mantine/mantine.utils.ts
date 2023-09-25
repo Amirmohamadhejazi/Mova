@@ -1,5 +1,5 @@
 import { type MantineThemeOverride } from '@mantine/core'
-// import { rtlPlugin } from 'stylis-plugin-rtl'
+import rtlPlugin from 'stylis-plugin-rtl'
 
 const mantineThemeObject: MantineThemeOverride = {
     breakpoints: {
@@ -21,7 +21,7 @@ const ltrCacheObject = {
 
 const rtlCacheObject = {
     key: 'mantine-rtl',
-    // stylisPlugins: [rtlPlugin],
+    stylisPlugins: [rtlPlugin],
 }
 
 export { mantineThemeObject, rtlCacheObject, ltrCacheObject }

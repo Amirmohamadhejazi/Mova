@@ -17,6 +17,8 @@ const DHomeTemplate: FC = () => {
                 //     },
                 // }}
                 defaultValue={2}
+                count={8}
+                onChange={(e) => console.log(e)}
             />
         </div>
     )
