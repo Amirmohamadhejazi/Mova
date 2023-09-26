@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 import { AiOutlineUser } from 'react-icons/ai'
 import { BiSearchAlt } from 'react-icons/bi'
 import { CgProfile } from 'react-icons/cg'
-import { MdLogout, MdNotifications } from 'react-icons/md'
+import { MdLogout, MdOutlineNotificationsActive } from 'react-icons/md'
 import { TextInput } from '@mantine/core'
 import { Popover } from '@mantine/core'
 
@@ -28,8 +28,8 @@ const DHomeHeader: FC = () => {
             <div className='shrink-0 hidden lg:block lg:w-[250px]  '>
                 <Image src={logoHeader} alt='logo' />
             </div>
-            <div className='grid grid-cols-8 flex-grow  gap-x-2 w-full overflow-hidden text-dark-700 '>
-                <div className='col-span-6 flex text-center justify-between items-center '>
+            <div className='grid grid-cols-8 flex-grow  gap-x-2 w-full  text-dark-700 '>
+                <div className='col-span-6 flex text-center justify-between items-center  mx-12'>
                     <div className='flex items-start gap-x-5'>
                         {categoriesData.map((items) => (
                             <HandlerLink key={items.id} items={items}>
@@ -81,7 +81,7 @@ const DHomeHeader: FC = () => {
                             }}
                             onChange={setOpened}
                         >
-                            <Popover.Dropdown className='bg-gray-700 border-0 px-3 -top-1/4 right-1/2 transform  translate-x-1/2  translate-y-1/2 text-white'>
+                            <Popover.Dropdown className='bg-gray-700   border-0 px-3 -top-1/4 right-1/2 transform  translate-x-1/2  translate-y-1/2 text-white'>
                                 <div className='flex flex-col gap-y-4 min-w-[110px] font-medium'>
                                     <div className='text-sm flex items-center justify-between pt-2'>
                                         <span>پروفایل </span>
@@ -100,7 +100,7 @@ const DHomeHeader: FC = () => {
                     <span className='text-yellow-400  font-bold text-xl'>Anastasia </span>
 
                     <div className='p-2 bg-gray-700 text-white rounded-md cursor-pointer '>
-                        <MdNotifications size={20} className='text-primary' />
+                        <MdOutlineNotificationsActive size={20} className='text-primary transform   rotate-45' />
                     </div>
                 </div>
             </div>
