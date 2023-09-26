@@ -2,7 +2,6 @@
 import { type FC } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { RxCrossCircled } from 'react-icons/rx'
 
 import { type IDSidebarTabPropsItem, type TDSidebarTabsDataProps } from './resources'
 import { tabsData } from './resources/data/data'
@@ -17,10 +16,7 @@ const DHomeSidebar: FC = () => {
     return (
         <aside className={`shrink-0 hidden lg:block lg:w-[250px]`}>
             <div className='h-full sticky top-0'>
-                <div className='lg:hidden border-b py-4 px-4'>
-                    <RxCrossCircled className='cursor-pointer mr-auto' size={24} />
-                </div>
-                <div className='flex flex-col h-full pt-4 pr-6 gap-y-12'>
+                <div className='flex flex-col h-full pt-6 gap-y-12'>
                     {tabsData.map((itemsMain: TDSidebarTabsDataProps) => (
                         <div className='flex flex-col' key={itemsMain.id}>
                             <span className='text-[#F9F9F9] px-2 mb-2 font-light text-sm '>{itemsMain.library}</span>
@@ -29,9 +25,9 @@ const DHomeSidebar: FC = () => {
                                     <>
                                         <div
                                             className={`w-full mb select-none justify-between flex items-center duration-200 ${
-                                                pathname === items?.link
+                                                pathname.includes(items?.link)
                                                     ? '   text-yellow-400'
-                                                    : 'hover:text-yellow-300'
+                                                    : 'hover:text-yellow-300 text-primary'
                                             } `}
                                             key={items.id}
                                         >
@@ -39,14 +35,14 @@ const DHomeSidebar: FC = () => {
                                                 <div className='text-2xl'>{items.Icon}</div>
                                                 <p
                                                     className={`font-semibold text-md ${
-                                                        pathname === items?.link && 'text-yellow-400'
+                                                        pathname.includes(items?.link) && 'text-yellow-400'
                                                     }`}
                                                 >
                                                     {items.name}
                                                 </p>
                                                 <div
                                                     className={`  w-[2.7px] h-full absolute left-0 rounded  ${
-                                                        pathname === items?.link && ' bg-yellow-400'
+                                                        pathname.includes(items?.link) && ' bg-yellow-400'
                                                     }`}
                                                 />
                                             </div>

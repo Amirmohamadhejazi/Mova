@@ -1,5 +1,7 @@
 const COLORS = {
     white: '#fff',
+    secondary: '#fff',
+    primary: '#adb5bd',
     transparent: '#ffffff00',
     blue: {
         50: '#e7f5ff',

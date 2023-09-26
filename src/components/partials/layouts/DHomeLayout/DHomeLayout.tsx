@@ -8,7 +8,7 @@ const DHomeLayout: FC<ILayoutProps> = ({ children }) => {
     return (
         <div className='flex flex-col min-h-screen text-[#F9F9F9] bg-[#020916]'>
             <DHomeHeader />
-            <div className='flex flex-grow'>
+            <div className='w-full flex  px-4'>
                 <DHomeSidebar />
                 <main className='flex-grow w-full overflow-hidden'>{children}</main>
             </div>
