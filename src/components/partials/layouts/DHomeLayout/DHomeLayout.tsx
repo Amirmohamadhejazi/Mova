@@ -6,7 +6,7 @@ import { DHomeHeader, DHomeSidebar } from './resources'
 
 const DHomeLayout: FC<ILayoutProps> = ({ children }) => {
     return (
-        <div className='flex flex-col min-h-screen text-[#F9F9F9] bg-[black]'>
+        <div className='flex flex-col min-h-screen text-[#F9F9F9] bg-dark-700'>
             <DHomeHeader />
             <div className='w-full flex  px-4'>
                 <DHomeSidebar />
