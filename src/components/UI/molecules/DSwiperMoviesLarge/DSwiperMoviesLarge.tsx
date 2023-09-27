@@ -34,6 +34,7 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
         '--swiper-pagination-bullet-size': '10px',
         '--swiper-pagination-bullet-horizontal-gap': '4px',
     }
+
     return (
         <Swiper
             pagination={{ clickable: true }} // Enable clickable pagination

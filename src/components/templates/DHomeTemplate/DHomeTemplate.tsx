@@ -1,4 +1,3 @@
-'use client'
 import { type FC } from 'react'
 
 import { BannerSlider } from './resources'
@@ -10,7 +9,9 @@ const DHomeTemplate: FC = () => {
                 <BannerSlider />
             </div>
 
-            <div className='col-span-2 bg-gray-800 text-center rounded-md'>more items</div>
+            <div className='col-span-2 bg-gray-900 text-white flex items-center justify-center rounded-md animate-pulse'>
+                <span className='font-bold text-xl'>More items </span>
+            </div>
         </div>
     )
 }
