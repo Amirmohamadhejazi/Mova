@@ -15,17 +15,19 @@ import { type IDataSwiperMoviesLargeProps, type TStyleSwiperMoviesLarge } from '
 
 const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => {
     const [slideIndex, SetSlideIndex] = useState(0)
+    // Swiper next and prev btn
     const SwiperButtons = ({ type }: { type: string }) => {
-        const swiper = useSwiper()
+        const Swiper = useSwiper()
         return (
             <div
-                className='flex justify-center items-center text-4xl p-[6px] rounded-lg  backdrop-blur-sm bg-opacity-30 bg-gray-400 cursor-pointer'
-                onClick={() => (type === 'next' ? swiper.slideNext() : swiper.slidePrev())}
+                className='flex justify-center items-center text-3xl p-[4px] rounded-lg  backdrop-blur-sm bg-opacity-30 bg-gray-400 cursor-pointer'
+                onClick={() => (type === 'next' ? Swiper.slideNext() : Swiper.slidePrev())}
             >
                 {type === 'next' ? <MdOutlineKeyboardArrowLeft /> : <MdOutlineKeyboardArrowRight />}
             </div>
         )
     }
+
     const stylesSwiper: TStyleSwiperMoviesLarge = {
         '--swiper-pagination-bottom': '32px',
         '--swiper-pagination-color': '#FFBA08',
@@ -41,7 +43,7 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
             modules={[Pagination]}
             style={stylesSwiper}
             spaceBetween={10}
-            className='mySwiper h-[320px] rounded-lg relative ' // Correct class name
+            className='mySwiper h-[320px] rounded-lg  select-none relative ' // Correct class name
             onSlideChange={(e) => SetSlideIndex(e.realIndex)}
             loop
         >
@@ -57,24 +59,32 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
                     </span>
                 </SwiperSlide>
             ))}
-            <div className='w-full flex justify-between px-5 absolute left-0 right-0 top-1/2 transform -translate-y-1/2 z-10 text-white'>
-                <SwiperButtons type='prev' />
+            {/* next slider */}
+            <div className='absolute left-0 pl-5 top-1/2 transform -translate-y-1/2 z-10 text-white'>
                 <SwiperButtons type='next' />
             </div>
-            <div className='w-full justify-between flex absolute bottom-5 text-white font-bold px-5 z-10'>
+            {/* prev slider */}
+            <div className='absolute right-0 pr-5 top-1/2 transform -translate-y-1/2 z-10 text-white'>
+                <SwiperButtons type='prev' />
+            </div>
+
+            {/* 2 boxes under slider */}
+            <div className='absolute bottom-5 text-white font-bold left-5 z-10'>
                 <div
-                    className='px-4 py-[10px] flex items-center justify-center
-                 shadow-lg rounded-xl bg-gray-400  backdrop-blur-sm cursor-pointer bg-opacity-30	'
-                    onClick={() => console.log(dataSwiper[slideIndex])}
-                >
-                    <span>اضافه کردن به لیست</span>
-                    <HiPlus className='text-xl' />
-                </div>
-                <div
-                    className='px-4 py-[10px] flex items-center justify-center cursor-pointer shadow-lg rounded-xl bg-yellow-400 '
+                    className='px-6 py-[10px] flex items-center justify-center cursor-pointer shadow-lg rounded-xl bg-yellow-400 '
                     onClick={() => console.log(dataSwiper[slideIndex])}
                 >
                     <span className='text-dark-950 '> هم اکنون تماشا کنید!</span>
+                </div>
+            </div>
+            <div className='absolute bottom-5 text-white font-bold right-5 z-10'>
+                <div
+                    className='px-7 py-[10px] flex items-center justify-center gap-x-1.5
+                 shadow-lg rounded-xl bg-gray-400  backdrop-blur-sm cursor-pointer bg-opacity-30	'
+                    onClick={() => console.log(dataSwiper[slideIndex])}
+                >
+                    <HiPlus className='text-xl mb-1' />
+                    <span>اضافه کردن به لیست</span>
                 </div>
             </div>
         </Swiper>
