@@ -51,7 +51,6 @@ const DHomeHeader: FC = () => {
                         ))}
                     </div>
                     <TextInput
-                        rightSectionPointerEvents='none'
                         rightSection={<BiSearchAlt size={20} className='text-gray-500' />}
                         placeholder='جستجو'
                         styles={{
