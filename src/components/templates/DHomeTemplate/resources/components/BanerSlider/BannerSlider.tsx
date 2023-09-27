@@ -1,6 +1,6 @@
 import { type FC } from 'react'
 
-import DSwiperMoviesLarge from '@molecules/DSwiperMoviesLarge/DSwiperMoviesLarge'
+import { DSwiperMoviesLarge } from '@molecules/DSwipers'
 
 import { dataSwiper } from '../..'
 
