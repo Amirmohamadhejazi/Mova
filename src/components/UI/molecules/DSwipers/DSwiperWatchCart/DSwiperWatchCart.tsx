@@ -1,45 +1,54 @@
 'use client'
 import { type FC } from 'react'
-// import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md'
-// Import Swiper React components
+import Image from 'next/image'
+import { Progress } from '@mantine/core'
+// import required modules
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/css/pagination'
 import 'swiper/css'
 
-const DSwiperWatchCart: FC = () => {
-    // console.log(move)
-
-    // Swiper next and prev btn
-    // const SwiperButtons = ({ type }: { type: string }) => {
-    //     const Swiper = useSwiper()
-    //     return (
-    //         <div
-    //             className='flex justify-center items-center text-3xl p-[4px] rounded-lg  backdrop-blur-sm bg-opacity-30 bg-gray-400 cursor-pointer'
-    //             onClick={() => (type === 'next' ? Swiper.slideNext() : Swiper.slidePrev())}
-    //         >
-    //             {type === 'next' ? <MdOutlineKeyboardArrowLeft /> : <MdOutlineKeyboardArrowRight />}
-    //         </div>
-    //     )
-    // }
-
-    // useEffect(() => {
-    //     console.log('moved', move)
-    // }, [move])
-
+import { type IDataSwiperWatchCartProps } from './resources'
+//  IDataSwiperWatchCartLargeProps, TWatchCartData
+const DSwiperWatchCart: FC<IDataSwiperWatchCartProps> = ({ dataSwiper }) => {
     return (
         <Swiper
-            slidesPerView={1.5}
+            slidesPerView={1}
             spaceBetween={10}
-            className='mySwiper h-[320px] rounded-lg  select-none relative ' // Correct class name
-            loop
+            className='mySwiperCartPrev rounded-lg text-white select-none relative ' // Correct class name
         >
-            <SwiperSlide>1</SwiperSlide>
-            <SwiperSlide>1</SwiperSlide>
-            <SwiperSlide>1</SwiperSlide>
-            <SwiperSlide>1</SwiperSlide>
+            {dataSwiper.map((itemsSwiper) => (
+                <SwiperSlide className='    h-full' key={dataSwiper.id}>
+                    <div className='bg-[#16181E] flex flex-col text-white p-2   rounded '>
+                        <div className='flex items-center gap-x-2 '>
+                            <Image
+                                alt={itemsSwiper.banner.src}
+                                src={itemsSwiper.banner.src}
+                                width={80}
+                                height={64}
+                                className=' object-contain rounded '
+                            />
+                            <div className='flex-grow flex flex-col gap-y-2'>
+                                <span className='font-bold text-sm'>{itemsSwiper.name}</span>
+                                <span className='text-sm text-gray-500'>{itemsSwiper.episodeLeft} قسمت باقی مانده</span>
+                                <span>
+                                    <Progress color='#F8B319' size='sm' value={itemsSwiper.Progress} />
+                                </span>
+                            </div>
+                        </div>
+                        <div className='grid grid-cols-10 gap-x-3   text-lg mt-5'>
+                            <div className=' col-span-7 py-2 flex items-center justify-center cursor-pointer shadow-lg rounded-md bg-yellow-400 '>
+                                <span className='text-dark-950 font-extrabold'>تماشا</span>
+                            </div>
+                            <div className=' col-span-3 flex  py-2 justify-center items-center rounded-md  backdrop-blur-sm bg-opacity-30 bg-gray-400 cursor-pointer'>
+                                <span>بیخیال</span>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+            ))}
         </Swiper>
     )
 }
-// this not complied ... /////////////
+
 export default DSwiperWatchCart

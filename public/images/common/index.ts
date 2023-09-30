@@ -6,4 +6,15 @@ import johnWick from './movies/johnWick.jpg'
 import kingsManPic from './movies/kingsman.jpg'
 import lokiThumbnail from './movies/loki-thumbnail.jpg'
 import rikThumbnail from './movies/rik-thumbnail.jpg'
-export { logoHeader, Annabel, extraction2, johnWick, kingsManPic, rikThumbnail, extraction2Thumbnail, lokiThumbnail }
+import wandaVisionSmall from './movies/wandaVisionSmall.jpg'
+export {
+    logoHeader,
+    Annabel,
+    extraction2,
+    johnWick,
+    kingsManPic,
+    rikThumbnail,
+    extraction2Thumbnail,
+    lokiThumbnail,
+    wandaVisionSmall,
+}
