@@ -68,7 +68,7 @@ const DHomeHeader: FC = () => {
                 </div>
 
                 <div className='col-span-2 flex items-center justify-end md:justify-end xl:justify-between gap-6 text-center mx-5 md:mx-0'>
-                    <div className='p-2 bg-gray-700 text-white rounded-md cursor-pointer block md:hidden'>
+                    <div className='p-2 bg-gray-700 text-white rounded-md cursor-pointer block lg:hidden'>
                         <HiMenuAlt3
                             size={20}
                             className='text-primary transform rotate-45'
@@ -76,7 +76,7 @@ const DHomeHeader: FC = () => {
                         />
                     </div>
                     <div
-                        className='p-2 bg-gray-700 text-white rounded-md cursor-pointer relative hidden md:block'
+                        className='p-2 bg-gray-700 text-white rounded-md cursor-pointer relative hidden lg:block'
                         onClick={() => setOpened((o) => !o)}
                     >
                         <AiOutlineUser size={20} className='text-primary' />
@@ -111,7 +111,7 @@ const DHomeHeader: FC = () => {
 
                     <span className='hidden xl:block text-yellow-400  font-bold text-xl'>Anastasia </span>
 
-                    <div className='p-2 bg-gray-700 text-white rounded-md cursor-pointer hidden md:block'>
+                    <div className='p-2 bg-gray-700 text-white rounded-md cursor-pointer hidden lg:block'>
                         <MdOutlineNotificationsActive size={20} className='text-primary transform rotate-45' />
                     </div>
                 </div>
@@ -120,7 +120,7 @@ const DHomeHeader: FC = () => {
                 opened={opened}
                 onClose={() => setOpened(false)}
                 title=' '
-                className='block md:hidden relative '
+                className='block xl:hidden relative '
                 transitionProps={{ duration: 150, timingFunction: 'linear' }}
                 size='xs'
                 styles={{

@@ -6,6 +6,8 @@ import johnWick from './movies/johnWick.jpg'
 import kingsManPic from './movies/kingsman.jpg'
 import lokiThumbnail from './movies/loki-thumbnail.jpg'
 import rikThumbnail from './movies/rik-thumbnail.jpg'
+import supermanSmall from './movies/superManSmall.jpg'
+import theLastOfUsSmall from './movies/theLastOfUsSmall.jpg'
 import wandaVisionSmall from './movies/wandaVisionSmall.jpg'
 export {
     logoHeader,
@@ -17,4 +19,6 @@ export {
     extraction2Thumbnail,
     lokiThumbnail,
     wandaVisionSmall,
+    supermanSmall,
+    theLastOfUsSmall,
 }

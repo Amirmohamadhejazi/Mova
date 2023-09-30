@@ -5,7 +5,7 @@ import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrow
 import { DSwiperWatchCart } from '@molecules/DSwipers'
 import { type TWatchCartData } from '@molecules/DSwipers/DSwiperWatchCart/resources'
 
-import { wandaVisionSmall } from '@public/images/common'
+import { supermanSmall, theLastOfUsSmall, wandaVisionSmall } from '@public/images/common'
 
 import { BannerSlider, PopularMovies } from './resources'
 
@@ -19,16 +19,16 @@ const DHomeTemplate: FC = () => {
             id: 0,
         },
         {
-            name: 'Wanda Vision',
+            name: 'Super Man',
             episodeLeft: 2,
-            banner: wandaVisionSmall,
+            banner: supermanSmall,
             Progress: 20,
             id: 1,
         },
         {
-            name: 'Wanda Vision',
-            episodeLeft: 4,
-            banner: wandaVisionSmall,
+            name: 'The Last Of Us',
+            episodeLeft: 0,
+            banner: theLastOfUsSmall,
             Progress: 100,
             id: 2,
         },
