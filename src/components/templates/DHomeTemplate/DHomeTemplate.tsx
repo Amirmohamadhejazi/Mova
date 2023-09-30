@@ -51,7 +51,7 @@ const DHomeTemplate: FC = () => {
             <div className='col-span-2 flex flex-col'>
                 <div className='flex  items-center justify-between w-full'>
                     <div className='flex  items-center gap-x-2 '>
-                        <span className='text-white'>ادامه</span>
+                        <span className='text-white'>ادامه </span>
                         <div className='flex '>
                             <MdOutlineKeyboardArrowRight
                                 className='text-primary hover:text-yellow-400 cursor-pointer '
