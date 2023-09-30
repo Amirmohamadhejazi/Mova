@@ -20,23 +20,24 @@ const DSwiperWatchCart: FC<IDataSwiperWatchCartProps> = ({ dataSwiper }) => {
             {dataSwiper.map((itemsSwiper) => (
                 <SwiperSlide className='    h-full' key={dataSwiper.id}>
                     <div className='bg-[#16181E] flex flex-col text-white p-2   rounded '>
-                        <div className='flex items-center gap-x-2 '>
-                            <Image
-                                alt={itemsSwiper.banner.src}
-                                src={itemsSwiper.banner.src}
-                                width={80}
-                                height={64}
-                                className=' object-contain rounded '
-                            />
+                        <div className='flex gap-x-2 '>
+                            <div>
+                                <Image
+                                    alt={itemsSwiper.banner.src}
+                                    src={itemsSwiper.banner.src}
+                                    width={80}
+                                    height={90}
+                                    className='h-full w-16 object-cover rounded-md '
+                                />
+                            </div>
                             <div className='flex-grow flex flex-col gap-y-2'>
                                 <span className='font-bold text-sm'>{itemsSwiper.name}</span>
                                 <span className='text-sm text-gray-500'>{itemsSwiper.episodeLeft} قسمت باقی مانده</span>
-                                <span>
-                                    <Progress color='#F8B319' size='sm' value={itemsSwiper.Progress} />
-                                </span>
+
+                                <Progress color='#F8B319' size='sm' value={itemsSwiper.Progress} />
                             </div>
                         </div>
-                        <div className='grid grid-cols-10 gap-x-3   text-lg mt-5'>
+                        <div className='grid grid-cols-10 gap-x-3   text-sm mt-5'>
                             <div className=' col-span-7 py-2 flex items-center justify-center cursor-pointer shadow-lg rounded-md bg-yellow-400 '>
                                 <span className='text-dark-950 font-extrabold'>تماشا</span>
                             </div>
