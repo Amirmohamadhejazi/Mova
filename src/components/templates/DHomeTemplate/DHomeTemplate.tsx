@@ -43,7 +43,6 @@ const DHomeTemplate: FC = () => {
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-8 flex-grow gap-x-2 w-full overflow-hidden text-dark-700 h-full gap-y-5 md:gap-y-0'>
-            {/* <div className='col-span-1 md:col-span-6 '> */}
             <div className='col-span-1 md:col-span-6 flex flex-col mx-5 xl:mx-12 gap-y-5 md:gap-y-0'>
                 <div>
                     <BannerSlider />
@@ -52,7 +51,6 @@ const DHomeTemplate: FC = () => {
                     <PopularMovies />
                 </div>
             </div>
-
             <div className='col-span-1 md:col-span-2 flex flex-col mx-5 md:mx-0'>
                 <div className='flex  items-center justify-between w-full'>
                     <div className='flex  items-center gap-x-2 '>

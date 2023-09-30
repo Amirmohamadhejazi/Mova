@@ -21,6 +21,7 @@ import { DHomeSidebar } from '../..'
 const DHomeHeader: FC = () => {
     const pathname = usePathname()
     const [opened, setOpened] = useState(false)
+    const [drawer, setDrawer] = useState(false)
 
     const HandlerLink = ({ children, items }: { children: React.JSX.Element; items: TCategoriesDataHeader }) => {
         const isActive = pathname === items?.link
@@ -72,7 +73,7 @@ const DHomeHeader: FC = () => {
                         <HiMenuAlt3
                             size={20}
                             className='text-primary transform rotate-45'
-                            onClick={() => setOpened(true)}
+                            onClick={() => setDrawer(true)}
                         />
                     </div>
                     <div
@@ -91,7 +92,6 @@ const DHomeHeader: FC = () => {
                                     border: '1px solid #495057',
                                 },
                             }}
-                            onChange={setOpened}
                         >
                             <Popover.Dropdown className='bg-gray-700   border-0 px-3 -top-1/4 right-1/2 transform  translate-x-1/2  translate-y-1/2 text-white'>
                                 <div className='flex flex-col gap-y-4 min-w-[110px] font-medium'>
@@ -117,10 +117,10 @@ const DHomeHeader: FC = () => {
                 </div>
             </div>
             <Drawer
-                opened={opened}
-                onClose={() => setOpened(false)}
+                opened={drawer}
+                onClose={() => setDrawer(false)}
                 title=' '
-                className='block xl:hidden relative '
+                className='block lg:hidden relative '
                 transitionProps={{ duration: 150, timingFunction: 'linear' }}
                 size='xs'
                 styles={{
@@ -130,7 +130,7 @@ const DHomeHeader: FC = () => {
                 closeButtonProps={<AiOutlineCloseCircle />}
             >
                 <div className='absolute top-5 left-5 text-4xl text-white'>
-                    <AiOutlineCloseCircle onClick={() => setOpened(false)} />
+                    <AiOutlineCloseCircle onClick={() => setDrawer(false)} />
                 </div>
 
                 <div className='flex items-start flex-col mt-12'>
