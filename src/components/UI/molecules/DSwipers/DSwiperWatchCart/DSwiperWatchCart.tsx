@@ -11,8 +11,20 @@ import 'swiper/css'
 import { type IDataSwiperWatchCartProps } from './resources'
 //  IDataSwiperWatchCartLargeProps, TWatchCartData
 const DSwiperWatchCart: FC<IDataSwiperWatchCartProps> = ({ dataSwiper }) => {
+    const breakSwiper = {
+        360: {
+            slidesPerView: 1,
+        },
+        515: {
+            slidesPerView: 2,
+        },
+        767: {
+            slidesPerView: 1,
+        },
+    }
     return (
         <Swiper
+            breakpoints={breakSwiper}
             slidesPerView={1}
             spaceBetween={10}
             className='mySwiperCartPrev rounded-lg text-white select-none relative ' // Correct class name

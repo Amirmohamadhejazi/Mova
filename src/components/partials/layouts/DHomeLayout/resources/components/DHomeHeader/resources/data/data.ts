@@ -4,7 +4,6 @@ export const categoriesData: TCategoriesDataHeader[] = [
     {
         name: 'فیلم ها',
         link: '/home/movies',
-        active: true,
         id: 0,
     },
     {

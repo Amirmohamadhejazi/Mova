@@ -1,6 +1,7 @@
 'use client'
 import { type FC, useState } from 'react'
 import Image from 'next/image'
+import { BsPlayCircle } from 'react-icons/bs'
 import { HiPlus } from 'react-icons/hi'
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md'
 // import required modules
@@ -71,20 +72,21 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
             {/* 2 boxes under slider */}
             <div className='absolute bottom-5 text-white font-bold left-5 z-10'>
                 <div
-                    className='px-6 py-[10px] flex items-center justify-center cursor-pointer shadow-lg rounded-xl bg-yellow-400 '
+                    className='p-3 xl:px-6 xl:py-[10px] flex items-center justify-center cursor-pointer shadow-lg rounded-full xl:rounded-xl bg-yellow-400 '
                     onClick={() => console.log(dataSwiper[slideIndex])}
                 >
-                    <span className='text-dark-950 '> هم اکنون تماشا کنید!</span>
+                    <span className='text-dark-950    hidden xl:flex'> هم اکنون تماشا کنید!</span>
+                    <BsPlayCircle className='flex text-dark-950 text-2xl xl:hidden' />
                 </div>
             </div>
             <div className='absolute bottom-5 text-white font-bold right-5 z-10'>
                 <div
-                    className='px-7 py-[10px] flex items-center justify-center gap-x-1.5
-                 shadow-lg rounded-xl bg-gray-400  backdrop-blur-sm cursor-pointer bg-opacity-30	'
+                    className='p-3 xl:px-7 xl:py-[10px] flex items-center justify-center gap-x-1.5
+                 shadow-lg rounded-full xl:rounded-xl bg-gray-400  backdrop-blur-sm cursor-pointer bg-opacity-30	'
                     onClick={() => console.log(dataSwiper[slideIndex])}
                 >
-                    <HiPlus className='text-xl mb-1' />
-                    <span>اضافه کردن به لیست</span>
+                    <HiPlus className='text-xl xl:mb-1' />
+                    <span className='hidden xl:block'>اضافه کردن به لیست</span>
                 </div>
             </div>
         </Swiper>

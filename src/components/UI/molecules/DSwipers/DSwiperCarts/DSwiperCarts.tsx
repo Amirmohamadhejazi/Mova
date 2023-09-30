@@ -15,18 +15,9 @@ const DSwiperCarts: FC<{ children: ReactNode }> = ({ children }) => {
             slidesPerView: 1,
         },
         577: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        992: {
             slidesPerView: 2,
         },
         1200: {
-            slidesPerView: 3,
-        },
-        1400: {
             slidesPerView: 3,
         },
     }
@@ -34,7 +25,7 @@ const DSwiperCarts: FC<{ children: ReactNode }> = ({ children }) => {
     return (
         <Swiper
             breakpoints={breakSwiper}
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={30}
             scrollbar={{
                 hide: true,
