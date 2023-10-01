@@ -9,8 +9,6 @@ import 'swiper/css'
 import { type IDataSwiperGenreMoviesProps } from './resources'
 
 const DSwiperGenreMovies: FC<IDataSwiperGenreMoviesProps> = ({ dataSwiper }) => {
-    console.log(dataSwiper)
-
     const breakSwiper = {
         360: {
             slidesPerView: 1,

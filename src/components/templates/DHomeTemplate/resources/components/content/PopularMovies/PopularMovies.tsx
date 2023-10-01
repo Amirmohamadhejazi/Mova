@@ -12,7 +12,7 @@ const PopularMovies: FC = () => {
     return (
         <div>
             <div className='flex flex-col gap-y-5 text-white md:mt-8'>
-                <span className='font-bold text-2xl '>محبوب ترین فیلم ها</span>
+                <span className='font-bold text=lg md:text-2xl '>محبوب ترین فیلم ها</span>
                 <div>
                     <DSwiperCarts>
                         <>

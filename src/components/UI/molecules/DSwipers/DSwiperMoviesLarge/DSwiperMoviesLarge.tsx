@@ -55,7 +55,7 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
                         src={itemsSwipe.banner}
                         className='relative h-full w-full rounded-lg object-cover'
                     />
-                    <span className='absolute top-10 left-10 text-3xl font-extrabold  text-white'>
+                    <span className='absolute top-10 left-10 text-xl md:text-3xl font-extrabold  text-white'>
                         {itemsSwipe.name}
                     </span>
                 </SwiperSlide>
