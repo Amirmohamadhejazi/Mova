@@ -1,6 +1,5 @@
 'use client'
 import { type FC, useState } from 'react'
-import Image from 'next/image'
 import { BsPlayCircle } from 'react-icons/bs'
 import { HiPlus } from 'react-icons/hi'
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md'
@@ -50,14 +49,15 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
         >
             {dataSwiper.map((itemsSwipe) => (
                 <SwiperSlide key={itemsSwipe.id}>
-                    <Image
-                        alt={itemsSwipe.name}
-                        src={itemsSwipe.banner}
-                        className='relative h-full w-full rounded-lg object-cover'
-                    />
-                    <span className='absolute top-10 left-10 text-xl md:text-3xl font-extrabold  text-white'>
-                        {itemsSwipe.name}
-                    </span>
+                    <div
+                        className='filter brightness-90 h-full w-full bg-center	 flex flex-col  text-white bg-cover  rounded'
+                        style={{ backgroundImage: `url('${itemsSwipe.banner.src}')` }}
+                    ></div>
+                    <div className='w-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-32  rounded-xl p-5  '>
+                        <span className='absolute top-10 left-10 text-xl md:text-3xl font-extrabold  text-white'>
+                            {itemsSwipe.name}
+                        </span>
+                    </div>
                 </SwiperSlide>
             ))}
             {/* next slider */}

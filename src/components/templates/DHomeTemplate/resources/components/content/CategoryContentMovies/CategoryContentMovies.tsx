@@ -12,9 +12,9 @@ const CategoryContentMovies: FC = () => {
     console.log(dataSwipeCategoryContentMovies)
 
     return (
-        <div>
+        <div className='flex flex-col gap-y-5  md:mt-6'>
             {dataSwipeCategoryContentMovies.map((itemsCategory) => (
-                <div className='flex flex-col gap-y-5 text-white md:mt-8' key={itemsCategory.id}>
+                <div className='flex flex-col gap-y-5 text-white' key={itemsCategory.id}>
                     <span className='font-bold text=lg md:text-2xl '>{itemsCategory.categoryName}</span>
                     <div>
                         <DSwiperCarts>
@@ -22,11 +22,14 @@ const CategoryContentMovies: FC = () => {
                                 {itemsCategory.data.map((items) => (
                                     <SwiperSlide key={items.id}>
                                         <div
-                                            className='flex flex-col gap-y-32  rounded-xl p-5  bg-cover '
-                                            style={{ backgroundImage: `url(${items.banner.src})` }}
-                                        >
+                                            className='filter brightness-75 h-[250px] w-full bg-center	 flex flex-col  text-white bg-cover  rounded'
+                                            style={{ backgroundImage: `url('${items.banner.src}')` }}
+                                        ></div>
+                                        <div className='w-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-32  rounded-xl p-5  '>
                                             <div>
-                                                <div className='truncate text-xl font-bold '>{items.name}</div>
+                                                <div className='truncate text-xl font-bold drop-shadow-2xl'>
+                                                    {items.name}
+                                                </div>
                                                 <Rating value={items.rate} readOnly size='xs' />
                                             </div>
 

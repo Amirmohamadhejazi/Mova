@@ -9,12 +9,15 @@ import interstellar from './movies/interstellar.jpg'
 import johnWick from './movies/johnWick.jpg'
 import kingsManPic from './movies/kingsman.jpg'
 import lokiThumbnail from './movies/loki-thumbnail.jpg'
+import moneyHeist from './movies/moneyHeist.webp'
 import rikThumbnail from './movies/rik-thumbnail.jpg'
 import spiderManNowayHome from './movies/spidermanNowayHome.jpg'
+import strangerThings from './movies/strangerThings.jpg'
 import supermanSmall from './movies/superManSmall.jpg'
 import theLastOfUsSmall from './movies/theLastOfUsSmall.jpg'
 import thePhantomMenace from './movies/thePhantomMenace.jpeg'
 import wandaVisionSmall from './movies/wandaVisionSmall.jpg'
+
 export {
     logoHeader,
     Annabel,
@@ -33,4 +36,6 @@ export {
     dayShift,
     avatar1,
     thePhantomMenace,
+    strangerThings,
+    moneyHeist,
 }
