@@ -12,7 +12,7 @@ const CategoryContentMovies: FC = () => {
     console.log(dataSwipeCategoryContentMovies)
 
     return (
-        <div className='flex flex-col gap-y-5  md:mt-6'>
+        <div className='flex flex-col gap-y-5  md:mt-6 mb-6'>
             {dataSwipeCategoryContentMovies.map((itemsCategory) => (
                 <div className='flex flex-col gap-y-5 text-white' key={itemsCategory.id}>
                     <span className='font-bold text=lg md:text-2xl '>{itemsCategory.categoryName}</span>
