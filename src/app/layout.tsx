@@ -10,7 +10,7 @@ import '@styles/globals.css'
 import Providers from './Providers/Providers'
 
 export const metadata: Metadata = {
-    title: 'QTO',
+    title: 'Mova',
 }
 
 const RootLayout: FC<ILayoutProps> = ({ children }) => {
