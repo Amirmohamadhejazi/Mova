@@ -12,9 +12,9 @@ import 'swiper/css/scrollbar'
 const DSwiperCarts: FC<{ children: ReactNode }> = ({ children }) => {
     const breakSwiper = {
         360: {
-            slidesPerView: 1,
+            slidesPerView: 1.4,
         },
-        577: {
+        470: {
             slidesPerView: 2,
         },
         1200: {
@@ -31,7 +31,7 @@ const DSwiperCarts: FC<{ children: ReactNode }> = ({ children }) => {
                 hide: true,
             }}
             modules={[Scrollbar]}
-            className='mySwiper  rounded-lg   select-none relative ' // Correct class name
+            className='mySwiperDSwiperCarts  rounded-lg   select-none relative ' // Correct class name
         >
             {children}
         </Swiper>

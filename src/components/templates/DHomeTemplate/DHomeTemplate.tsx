@@ -1,80 +1,19 @@
-'use client'
 import { type FC } from 'react'
-import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md'
-
-import { DSwiperWatchCart } from '@molecules/DSwipers'
-import { type TWatchCartData } from '@molecules/DSwipers/DSwiperWatchCart/resources'
-
-import { supermanSmall, theLastOfUsSmall, wandaVisionSmall } from '@public/images/common'
 
 import { BannerSlider, PopularMovies } from './resources'
+import { ContinueMovies, Genres, TopRated } from './resources/components/leftContent'
 
 const DHomeTemplate: FC = () => {
-    const data: TWatchCartData[] = [
-        {
-            name: 'Wanda Vision',
-            episodeLeft: 1,
-            banner: wandaVisionSmall,
-            Progress: 40,
-            id: 0,
-        },
-        {
-            name: 'Super Man',
-            episodeLeft: 2,
-            banner: supermanSmall,
-            Progress: 20,
-            id: 1,
-        },
-        {
-            name: 'The Last Of Us',
-            episodeLeft: 0,
-            banner: theLastOfUsSmall,
-            Progress: 100,
-            id: 2,
-        },
-        {
-            name: 'Wanda Vision',
-            episodeLeft: 1,
-            banner: wandaVisionSmall,
-            Progress: 60,
-            id: 3,
-        },
-    ]
-
     return (
         <div className='grid grid-cols-1 md:grid-cols-8 flex-grow gap-x-2 w-full overflow-hidden text-dark-700 h-full gap-y-5 md:gap-y-0'>
             <div className='col-span-1 md:col-span-6 flex flex-col mx-5 xl:mx-12 gap-y-5 md:gap-y-0'>
-                <div>
-                    <BannerSlider />
-                </div>
-                <div>
-                    <PopularMovies />
-                </div>
+                <BannerSlider />
+                <PopularMovies />
             </div>
-            <div className='col-span-1 md:col-span-2 flex flex-col mx-5 md:mx-0'>
-                <div className='flex  items-center justify-between w-full'>
-                    <div className='flex  items-center gap-x-2 '>
-                        <span className='text-white'>ادامه </span>
-                        <div className='flex '>
-                            <MdOutlineKeyboardArrowRight
-                                className='text-primary hover:text-yellow-400 cursor-pointer '
-                                // onClick={() => SwiperButtons('prev')}
-                            />
-                            <MdOutlineKeyboardArrowLeft
-                                className='text-primary hover:text-yellow-400  cursor-pointer '
-                                // onClick={() => SwiperButtons('next')}
-                            />
-                        </div>
-                    </div>
-                    <div className='flex font-medium text-primary items-center gap-x-2'>
-                        <span>مشاهده</span>
-                        <MdKeyboardArrowLeft className=' ' />
-                    </div>
-                </div>
-
-                <div className='flex mt-3'>
-                    <DSwiperWatchCart dataSwiper={data} />
-                </div>
+            <div className='col-span-1 md:col-span-2 flex flex-col justify-between mx-5 md:mx-0'>
+                <ContinueMovies />
+                <TopRated />
+                <Genres />
             </div>
         </div>
     )

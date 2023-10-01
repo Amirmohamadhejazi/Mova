@@ -2,10 +2,14 @@ import { type FC } from 'react'
 
 import { DSwiperMoviesLarge } from '@molecules/DSwipers'
 
-import { dataSwiper } from '../..'
+import { dataSwiper } from '../../..'
 
 const BannerSlider: FC = () => {
-    return <DSwiperMoviesLarge dataSwiper={dataSwiper} />
+    return (
+        <div>
+            <DSwiperMoviesLarge dataSwiper={dataSwiper} />
+        </div>
+    )
 }
 
 export default BannerSlider
