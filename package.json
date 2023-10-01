@@ -1,5 +1,5 @@
 {
-    "name": "qto",
+    "name": "mova",
     "version": "0.1.0",
     "private": true,
     "engines": {
@@ -17,6 +17,7 @@
     },
     "dependencies": {
         "@emotion/react": "^11.11.1",
+        "@headlessui/react": "^1.7.17",
         "@hookform/error-message": "^2.0.1",
         "@hookform/resolvers": "^3.3.1",
         "@mantine/core": "^6.0.20",

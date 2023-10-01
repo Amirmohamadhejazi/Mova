@@ -10,8 +10,8 @@ const DPopUpHeadless: FC<ILayoutProps> = ({ children }) => {
     }
 
     return (
-        <Popover className='relative w-full '>
-            <Popover.Button className='flex items-center focus:outline-none focus:ring-transparent '>
+        <Popover className='relative w-full'>
+            <Popover.Button className='flex items-center focus:outline-none focus:ring-transparent'>
                 {children}
             </Popover.Button>
             <Transition
@@ -22,13 +22,20 @@ const DPopUpHeadless: FC<ILayoutProps> = ({ children }) => {
                 leaveFrom='transform scale-100 opacity-100'
                 leaveTo='transform scale-95 opacity-0'
             >
-                <Popover.Panel open={false}>
-                    <div className='flex flex-col w-full overflow-hidden bg-white border rounded-sm text-red-600 absolute left-0 top-2 '>
-                        <div className='flex gap-x-1 items-center cursor-pointer px-5 py-2' onClick={logoutHandler}>
-                            1<span className='text-sm transition-all font-medium'>خروج</span>
-                        </div>
-                    </div>
-                </Popover.Panel>
+                {(isOpen) =>
+                    isOpen && (
+                        <Popover.Panel>
+                            <div className='flex flex-col w-full overflow-hidden bg-white border rounded-sm text-red-600 absolute left-0 top-2 '>
+                                <div
+                                    className='flex gap-x-1 items-center cursor-pointer px-5 py-2'
+                                    onClick={logoutHandler}
+                                >
+                                    1<span className='text-sm transition-all font-medium'>خروج</span>
+                                </div>
+                            </div>
+                        </Popover.Panel>
+                    )
+                }
             </Transition>
         </Popover>
     )

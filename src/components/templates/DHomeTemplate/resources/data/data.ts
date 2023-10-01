@@ -1,4 +1,4 @@
-import { type TMovieData } from '@molecules/DSwiperMoviesLarge/resources'
+import { type TMovieData } from '@molecules/DSwipers/DSwiperMoviesLarge/resources'
 
 import { Annabel, extraction2, johnWick, kingsManPic } from '@public/images/common'
 

@@ -30,7 +30,7 @@ const DSwiperWatchCart: FC<IDataSwiperWatchCartProps> = ({ dataSwiper }) => {
             className='mySwiperCartPrev rounded-lg text-white select-none relative ' // Correct class name
         >
             {dataSwiper.map((itemsSwiper) => (
-                <SwiperSlide className='    h-full' key={dataSwiper.id}>
+                <SwiperSlide className='    h-full' key={itemsSwiper.id}>
                     <div className='bg-[#16181E] flex flex-col text-white p-2   rounded '>
                         <div className='flex gap-x-2 '>
                             <div>
