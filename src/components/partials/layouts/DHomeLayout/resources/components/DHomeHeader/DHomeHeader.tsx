@@ -29,7 +29,7 @@ const DHomeHeader: FC = () => {
     }
     return (
         <div className='flex w-full mb-5 lg:mb-0 md:px-4 pt-5'>
-            <div className={`shrink-0 block md:hidden lg:block  lg:w-[250px]`}>
+            <div className={` shrink-0 block md:hidden lg:block  lg:w-[250px]`}>
                 <Image src={logoHeader} alt='logo' />
             </div>
 
@@ -129,7 +129,7 @@ const DHomeHeader: FC = () => {
                 }}
                 closeButtonProps={<AiOutlineCloseCircle />}
             >
-                <div className='absolute top-5 left-5 text-4xl text-white'>
+                <div className='absolute top-5 left-5 text-3xl text-gray-400'>
                     <AiOutlineCloseCircle onClick={() => setDrawer(false)} />
                 </div>
 

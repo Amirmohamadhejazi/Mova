@@ -1,7 +1,6 @@
 import { type FC } from 'react'
 
-import { BannerSlider, PopularMovies } from './resources'
-import { ContinueMovies, Genres, TopRated } from './resources/components/leftContent'
+import { BannerSlider, CategoryContentMovies, ContinueMovies, Genres, TopRated } from './resources'
 
 const DHomeTemplate: FC = () => {
     return (
@@ -9,14 +8,11 @@ const DHomeTemplate: FC = () => {
             {/* content */}
             <div className='col-span-1 md:col-span-6 flex flex-col mx-5 xl:mx-12 gap-y-5 md:gap-y-0'>
                 <BannerSlider />
-                <PopularMovies />
+                <CategoryContentMovies />
             </div>
 
             {/* left sidebar */}
-            <div
-                className='col-span-1 md:col-span-2 flex flex-col gap-y-3 md:gap-y-7 mx-5 md:mx-0'
-
-            >
+            <div className=' col-span-1 md:col-span-2 flex flex-col gap-y-3 md:gap-y-8 mx-5 md:mx-0 '>
                 <ContinueMovies />
                 <TopRated />
                 <Genres />
