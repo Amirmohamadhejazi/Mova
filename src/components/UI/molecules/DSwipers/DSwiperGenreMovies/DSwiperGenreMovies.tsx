@@ -39,6 +39,7 @@ const DSwiperGenreMovies: FC<IDataSwiperGenreMoviesProps> = ({ dataSwiper }) => 
                             <span className='text-lg font-bold'>{itemsSwiper.genres[0].genreName} </span>
                         </div>
                     </div>
+
                     <div className='flex mt-3  cursor-pointer  relative'>
                         <div
                             className='filter brightness-50 h-[100px] w-full  text-white bg-cover  rounded'

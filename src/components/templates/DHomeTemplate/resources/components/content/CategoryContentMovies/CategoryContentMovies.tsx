@@ -22,7 +22,7 @@ const CategoryContentMovies: FC = () => {
                                 {itemsCategory.data.map((items) => (
                                     <SwiperSlide key={items.id}>
                                         <div
-                                            className='filter brightness-75 h-[250px] w-full bg-center	 flex flex-col  text-white bg-cover  rounded'
+                                            className='filter brightness-75 h-[250px] w-full bg-center	   text-white bg-cover  rounded'
                                             style={{ backgroundImage: `url('${items.banner.src}')` }}
                                         ></div>
                                         <div className='w-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-32  rounded-xl p-3 '>
@@ -39,7 +39,7 @@ const CategoryContentMovies: FC = () => {
                                                         اطلاعات بیشتر
                                                     </span>
                                                 </div>
-                                                <div className='flex  px-2 py-2 justify-center items-center rounded-md  backdrop-blur-sm bg-opacity-30 bg-gray-400 cursor-pointer'>
+                                                <div className='flex  px-2 py-2 justify-center items-center rounded-md  bg-opacity-30 bg-gray-400 cursor-pointer'>
                                                     <HiPlus size={20} />
                                                 </div>
                                             </div>

@@ -20,7 +20,7 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
         const Swiper = useSwiper()
         return (
             <div
-                className='flex justify-center items-center text-3xl p-[4px] rounded-lg  backdrop-blur-sm bg-opacity-30 bg-gray-400 cursor-pointer'
+                className='flex justify-center items-center text-3xl p-[4px] rounded-lg   bg-opacity-30 bg-gray-400 cursor-pointer'
                 onClick={() => (type === 'next' ? Swiper.slideNext() : Swiper.slidePrev())}
             >
                 {type === 'next' ? <MdOutlineKeyboardArrowLeft /> : <MdOutlineKeyboardArrowRight />}
@@ -82,7 +82,7 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
             <div className='absolute bottom-5 text-white font-bold right-5 z-10'>
                 <div
                     className='p-3 xl:px-7 xl:py-[10px] flex items-center justify-center gap-x-1.5
-                shadow-lg rounded-full xl:rounded-xl bg-gray-400  backdrop-blur-sm cursor-pointer bg-opacity-30	'
+                shadow-lg rounded-full xl:rounded-xl bg-gray-400   cursor-pointer bg-opacity-30	'
                     onClick={() => console.log(dataSwiper[slideIndex])}
                 >
                     <HiPlus className='text-xl xl:mb-1' />

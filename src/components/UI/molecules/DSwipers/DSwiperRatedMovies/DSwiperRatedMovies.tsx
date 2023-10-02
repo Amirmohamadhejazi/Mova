@@ -48,7 +48,7 @@ const DSwiperRatedMovies: FC<IDataSwiperRatedMoviesProps> = ({ dataSwiper }) => 
                             <div className='col-span-6 py-2 flex items-center justify-center cursor-pointer shadow-lg rounded-md bg-yellow-400'>
                                 <span className='text-dark-950 font-extrabold'>تماشا</span>
                             </div>
-                            <div className='col-span-2 flex py-3 justify-center items-center rounded-md bg-gray-400 backdrop-blur-sm bg-opacity-30 filter grayscale cursor-pointer'>
+                            <div className='col-span-2 flex py-3 justify-center items-center rounded-md bg-gray-400 bg-opacity-30 filter grayscale cursor-pointer'>
                                 <HiPlus size={20} />
                             </div>
                         </div>

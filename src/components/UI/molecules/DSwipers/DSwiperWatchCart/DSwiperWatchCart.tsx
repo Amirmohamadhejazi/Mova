@@ -53,7 +53,7 @@ const DSwiperWatchCart: FC<IDataSwiperWatchCartProps> = ({ dataSwiper }) => {
                             <div className=' col-span-6 py-2 flex items-center justify-center cursor-pointer shadow-lg rounded-md bg-yellow-400 '>
                                 <span className='text-dark-950 font-extrabold'>تماشا</span>
                             </div>
-                            <div className=' col-span-2 flex  py-2 justify-center items-center rounded-md  backdrop-blur-sm bg-opacity-30 bg-gray-400 cursor-pointer'>
+                            <div className=' col-span-2 flex  py-2 justify-center items-center rounded-md  bg-opacity-30 bg-gray-400 cursor-pointer'>
                                 <span>بیخیال</span>
                             </div>
                         </div>
