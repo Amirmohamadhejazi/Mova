@@ -82,7 +82,7 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
             <div className='absolute bottom-5 text-white font-bold right-5 z-10'>
                 <div
                     className='p-3 xl:px-7 xl:py-[10px] flex items-center justify-center gap-x-1.5
-                 shadow-lg rounded-full xl:rounded-xl bg-gray-400  backdrop-blur-sm cursor-pointer bg-opacity-30	'
+                shadow-lg rounded-full xl:rounded-xl bg-gray-400  backdrop-blur-sm cursor-pointer bg-opacity-30	'
                     onClick={() => console.log(dataSwiper[slideIndex])}
                 >
                     <HiPlus className='text-xl xl:mb-1' />
