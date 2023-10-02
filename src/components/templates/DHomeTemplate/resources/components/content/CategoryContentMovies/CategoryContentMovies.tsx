@@ -25,7 +25,7 @@ const CategoryContentMovies: FC = () => {
                                             className='filter brightness-75 h-[250px] w-full bg-center	 flex flex-col  text-white bg-cover  rounded'
                                             style={{ backgroundImage: `url('${items.banner.src}')` }}
                                         ></div>
-                                        <div className='w-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-32  rounded-xl p-5  '>
+                                        <div className='w-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-32  rounded-xl p-3 '>
                                             <div>
                                                 <div className='truncate text-xl font-bold drop-shadow-2xl'>
                                                     {items.name}
