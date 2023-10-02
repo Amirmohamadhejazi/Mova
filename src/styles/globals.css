@@ -6,3 +6,19 @@
 
 /* Base */
 @import './base/base.css';
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000fa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #646464;
+    border-radius: 5px;
+}
