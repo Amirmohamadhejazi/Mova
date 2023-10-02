@@ -1,10 +1,10 @@
 'use client'
 import React, { type FC } from 'react'
 
-const DetailMovie: FC = ({ params }: { params: { slug: string } }) => {
-    console.log(params)
+import { DDetailMoviesTemplate } from '@templates/DDetailMoviesTemplate'
 
-    return <div>DetailMovie</div>
+const DetailMovie: FC = ({ params }: { params: { detail: string } }) => {
+    return <DDetailMoviesTemplate params={params.detail} />
 }
 
 export default DetailMovie
