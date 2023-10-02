@@ -23,7 +23,7 @@ const DHomeSidebar: FC = () => {
                             <HandlerLink key={items.id} items={items}>
                                 <>
                                     <div
-                                        className={`w-full mb select-none justify-between flex items-center duration-200 ${
+                                        className={`w-full mb  justify-between flex items-center duration-200 ${
                                             pathname.includes(items?.link)
                                                 ? '   text-yellow-400'
                                                 : 'hover:text-yellow-300 text-primary'

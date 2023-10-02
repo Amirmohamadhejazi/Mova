@@ -26,7 +26,7 @@ const DSwiperGenreMovies: FC<IDataSwiperGenreMoviesProps> = ({ dataSwiper }) => 
             breakpoints={breakSwiper}
             slidesPerView={1}
             spaceBetween={10}
-            className='DSwiperGenreMoviess rounded-lg text-white select-none relative ' // Correct class name
+            className='DSwiperGenreMoviess rounded-lg text-white   relative ' // Correct class name
         >
             {dataSwiper.map((itemsSwiper, index) => (
                 <SwiperSlide className='flex flex-col' key={index}>

@@ -12,7 +12,7 @@ const DCheckbox = forwardRef<HTMLInputElement, CheckboxProps>(({ className = '',
             className={`${className}`}
             classNames={{
                 body: 'items-center cursor-pointer',
-                label: 'text-sm font-medium pt-0.5 select-none cursor-pointer',
+                label: 'text-sm font-medium pt-0.5  cursor-pointer',
                 input: 'cursor-pointer',
                 ...classNames,
             }}

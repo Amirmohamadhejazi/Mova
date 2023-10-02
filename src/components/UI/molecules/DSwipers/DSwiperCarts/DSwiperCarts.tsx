@@ -35,7 +35,7 @@ const DSwiperCarts: FC<{ children: ReactNode }> = ({ children }) => {
                 hide: true,
             }}
             modules={[Scrollbar]}
-            className='mySwiperDSwiperCarts rounded-lg select-none relative' // Correct class name
+            className='mySwiperDSwiperCarts rounded-lg   relative' // Correct class name
         >
             {children}
         </Swiper>

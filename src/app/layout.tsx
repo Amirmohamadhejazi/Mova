@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const RootLayout: FC<ILayoutProps> = ({ children }) => {
     return (
-        <html lang='fa' className={`${yekan.variable} bg-[#000000fa]`}>
+        <html lang='fa' className={`${yekan.variable} bg-[#000000fa] select-none`}>
             <body dir='rtl'>
                 <Providers>{children}</Providers>
             </body>

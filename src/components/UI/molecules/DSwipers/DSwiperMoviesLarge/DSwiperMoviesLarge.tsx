@@ -43,7 +43,7 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
             modules={[Pagination]}
             style={stylesSwiper}
             spaceBetween={10}
-            className='mySwiper h-[320px] rounded-lg  select-none relative ' // Correct class name
+            className='mySwiper h-[320px] rounded-lg    relative ' // Correct class name
             onSlideChange={(e) => SetSlideIndex(e.realIndex)}
             loop
         >

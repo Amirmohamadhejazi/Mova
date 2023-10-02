@@ -27,7 +27,7 @@ const DSwiperWatchCart: FC<IDataSwiperWatchCartProps> = ({ dataSwiper }) => {
             breakpoints={breakSwiper}
             slidesPerView={1}
             spaceBetween={10}
-            className='mySwiperCartPrev rounded-lg text-white select-none relative ' // Correct class name
+            className='mySwiperCartPrev rounded-lg text-white   relative ' // Correct class name
         >
             {dataSwiper.map((itemsSwiper) => (
                 <SwiperSlide className='    h-full' key={itemsSwiper.id}>
