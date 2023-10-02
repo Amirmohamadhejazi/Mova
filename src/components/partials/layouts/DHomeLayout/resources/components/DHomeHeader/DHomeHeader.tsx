@@ -135,7 +135,7 @@ const DHomeHeader: FC = () => {
 
                 <div className='flex items-start flex-col mt-12'>
                     <span className='text-[#F9F9F9]  mb-2 font-light text-sm '>منوی فرعی</span>
-                    <div className='px-2'>
+                    <div className='px-2 flex items-start  flex-col'>
                         {categoriesData.map((items) => (
                             <HandlerLink key={items.id} items={items}>
                                 <div className='flex flex-col gap-y-1' key={items.id}>
