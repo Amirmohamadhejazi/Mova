@@ -1,11 +1,11 @@
 import { type FC } from 'react'
 
-import { DDetailMovies } from '@partials/layouts/DDetailMovies'
+import { DDetailLayout } from '@partials/layouts/DDetailLayout'
 
 import { type ILayoutProps } from '@core/types'
 
 const Layout: FC<ILayoutProps> = ({ children }) => {
-    return <DDetailMovies>{children}</DDetailMovies>
+    return <DDetailLayout>{children}</DDetailLayout>
 }
 
 export default Layout
