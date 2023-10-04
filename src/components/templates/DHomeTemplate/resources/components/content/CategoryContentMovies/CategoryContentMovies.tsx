@@ -1,5 +1,6 @@
 'use client'
 import { type FC } from 'react'
+import Link from 'next/link'
 import { HiPlus } from 'react-icons/hi'
 import { Rating } from '@mantine/core'
 import { SwiperSlide } from 'swiper/react'
@@ -9,7 +10,6 @@ import { DSwiperCarts } from '@molecules/DSwipers'
 import { dataSwipeCategoryContentMovies } from './resources'
 
 const CategoryContentMovies: FC = () => {
-
     return (
         <div className='flex flex-col gap-y-10'>
             {dataSwipeCategoryContentMovies.map((itemsCategory) => (
@@ -33,11 +33,14 @@ const CategoryContentMovies: FC = () => {
                                             </div>
 
                                             <div className='flex justify-between items-center '>
-                                                <div className=' px-5 py-2 flex items-center justify-center cursor-pointer shadow-lg rounded-md bg-yellow-400 '>
-                                                    <span className='text-dark-950 font-extrabold text-sm'>
-                                                        اطلاعات بیشتر
-                                                    </span>
-                                                </div>
+                                                <Link href={`/${items.category}/${items.id}`}>
+                                                    <div className=' px-5 py-2 flex items-center justify-center cursor-pointer shadow-lg rounded-md bg-yellow-400 '>
+                                                        <span className='text-dark-950 font-extrabold text-sm'>
+                                                            اطلاعات بیشتر
+                                                        </span>
+                                                    </div>
+                                                </Link>
+
                                                 <div className='flex  px-2 py-2 justify-center items-center rounded-md  bg-opacity-30 bg-gray-400 cursor-pointer'>
                                                     <HiPlus size={20} />
                                                 </div>

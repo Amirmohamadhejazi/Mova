@@ -4,6 +4,7 @@ type TCategoryContentMoviesItemsData = {
     name: string
     rate: number
     banner: StaticImageData
+    category: string
     id: number
 }
 export type TCategoryContentMoviesData = {
