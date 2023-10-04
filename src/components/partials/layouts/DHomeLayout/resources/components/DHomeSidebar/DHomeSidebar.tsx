@@ -26,7 +26,7 @@ const DHomeSidebar: FC = () => {
                             <HandlerLink key={index} items={items}>
                                 <div
                                     className={`w-full justify-between flex items-center duration-200 ${
-                                        pathname === items?.link
+                                        pathname.includes(items?.link)
                                             ? 'text-yellow-400'
                                             : 'hover:text-yellow-300 text-secondary'
                                     } `}
@@ -41,7 +41,7 @@ const DHomeSidebar: FC = () => {
                                         {/* Line */}
                                         <div
                                             className={`w-[2.7px] h-full absolute left-0 rounded  ${
-                                                pathname === items?.link ? ' bg-yellow-400' : ''
+                                                pathname.includes(items?.link) ? ' bg-yellow-400' : ''
                                             }`}
                                         />
                                     </div>

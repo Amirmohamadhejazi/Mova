@@ -1,3 +1,3 @@
-import DDetailMoviesLayout from './DDetailMovies'
+import DDetailMovies from './DDetailMovies'
 
-export { DDetailMoviesLayout }
+export { DDetailMovies }

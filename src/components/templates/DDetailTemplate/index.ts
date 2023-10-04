@@ -1,3 +1,3 @@
-import DDetailMoviesTemplate from './DDetailMovie/DDetailMovie'
-
-export { DDetailMoviesTemplate }
+import DDetailMovie from './DDetailMovie/DDetailMovie'
+import DDetailSerial from './DDetailSerial/DDetailSerial'
+export { DDetailMovie, DDetailSerial }

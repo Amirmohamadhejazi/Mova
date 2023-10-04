@@ -27,6 +27,7 @@ const DHomeHeader: FC = () => {
         const isActive = pathname === items?.link
         return isActive ? children : <Link href={items?.link}>{children}</Link>
     }
+
     return (
         <div className='flex w-full mb-5 lg:mb-0 md:px-4 pt-5'>
             <div className={` shrink-0 block md:hidden lg:block  lg:w-[250px]`}>
@@ -39,6 +40,8 @@ const DHomeHeader: FC = () => {
                         {categoriesData.map((items) => (
                             <HandlerLink key={items.id} items={items}>
                                 {/* Link Name */}
+                                {console.log(items?.link)}
+                                {console.log(pathname)}
                                 <h1
                                     className={`font-medium border-b-2 pb-1.5 px-2 ${
                                         pathname.includes(items?.link)
