@@ -9,13 +9,12 @@ import { DSwiperCarts } from '@molecules/DSwipers'
 import { dataSwipeCategoryContentMovies } from './resources'
 
 const CategoryContentMovies: FC = () => {
-    console.log(dataSwipeCategoryContentMovies)
 
     return (
-        <div className='flex flex-col gap-y-5  md:mt-6 mb-6'>
+        <div className='flex flex-col gap-y-10'>
             {dataSwipeCategoryContentMovies.map((itemsCategory) => (
                 <div className='flex flex-col gap-y-5 text-white' key={itemsCategory.id}>
-                    <span className='font-bold text=lg md:text-2xl '>{itemsCategory.categoryName}</span>
+                    <span className='font-bold text-lg md:text-xl '>{itemsCategory.categoryName}</span>
                     <div>
                         <DSwiperCarts>
                             <>

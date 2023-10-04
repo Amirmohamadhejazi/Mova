@@ -38,6 +38,18 @@ export const dataSwipeCategoryContentMovies: TCategoryContentMoviesData[] = [
                 id: 2,
             },
             {
+                name: 'Extraction 2',
+                rate: 3,
+                banner: extraction2Thumbnail,
+                id: 0,
+            },
+            {
+                name: 'Venome',
+                rate: 4,
+                banner: venome,
+                id: 1,
+            },
+            {
                 name: 'johnWick',
                 rate: 4,
                 banner: johnWick,

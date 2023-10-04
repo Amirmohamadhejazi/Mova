@@ -2,51 +2,36 @@ import localFont from 'next/font/local'
 export const yekan = localFont({
     src: [
         {
-            path: '../../../../public/fonts/Yekan Bakh FaNum 01 Hairline.woff',
+            path: '../../../../public/fonts/iranyekan/ttf/IRANYekanWebThin.ttf',
             weight: '100',
             style: 'normal',
         },
         {
-            path: '../../../../public/fonts/Yekan Bakh FaNum 02 Thin.woff',
+            path: '../../../../public/fonts/iranyekan/ttf/IRANYekanWebLight.ttf',
             weight: '200',
             style: 'normal',
         },
         {
-            path: '../../../../public/fonts/Yekan Bakh FaNum 03 Light.woff',
+            path: '../../../../public/fonts/iranyekan/ttf/IRANYekanWebRegular.ttf',
             weight: '300',
             style: 'normal',
         },
         {
-            path: '../../../../public/fonts/Yekan Bakh FaNum 04 Regular.woff',
+            path: '../../../../public/fonts/iranyekan/ttf/IRANYekanWebMedium.ttf',
             weight: '400',
             style: 'normal',
         },
         {
-            path: '../../../../public/fonts/Yekan Bakh FaNum 05 Medium.woff',
+            path: '../../../../public/fonts/iranyekan/ttf/IRANYekanWebBold.ttf',
             weight: '500',
             style: 'normal',
         },
         {
-            path: '../../../../public/fonts/Yekan Bakh FaNum 06 Bold.woff',
+            path: '../../../../public/fonts/iranyekan/ttf/IRANYekanWebExtraBold.ttf',
             weight: '600',
             style: 'normal',
         },
-        {
-            path: '../../../../public/fonts/Yekan Bakh FaNum 06 Bold.woff',
-            weight: '700',
-            style: 'normal',
-        },
-        {
-            path: '../../../../public/fonts/Yekan Bakh FaNum 07 Heavy.woff',
-            weight: '800',
-            style: 'normal',
-        },
-        {
-            path: '../../../../public/fonts/Yekan Bakh FaNum 08 Fat.woff',
-            weight: '900',
-            style: 'normal',
-        },
     ],
-    display: 'swap',
+    display: 'block',
     variable: '--font-yekan',
 })

@@ -38,20 +38,16 @@ const DHomeHeader: FC = () => {
                     <div className='flex items-start gap-x-5'>
                         {categoriesData.map((items) => (
                             <HandlerLink key={items.id} items={items}>
-                                <div className='flex flex-col gap-y-1' key={items.id}>
-                                    <span
-                                        className={`font-semibold ${
-                                            pathname.includes(items?.link) ? 'text-yellow-400 ' : 'text-primary'
-                                        } `}
-                                    >
-                                        {items.name}
-                                    </span>
-                                    <div
-                                        className={`h-[2.7px] rounded border-0 ${
-                                            pathname.includes(items?.link) ? 'bg-yellow-400' : 'bg-transparent '
-                                        }`}
-                                    />
-                                </div>
+                                {/* Link Name */}
+                                <h1
+                                    className={`font-medium border-b-2 pb-1.5 px-2 ${
+                                        pathname.includes(items?.link)
+                                            ? 'text-yellow-400 border-yellow-400'
+                                            : 'text-secondary border-transparent'
+                                    } `}
+                                >
+                                    {items.name}
+                                </h1>
                             </HandlerLink>
                         ))}
                     </div>

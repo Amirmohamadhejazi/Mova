@@ -13,7 +13,7 @@ import { type TDSidebarTabsDataProps } from '..'
 const tabsData: TDSidebarTabsDataProps[] = [
     {
         items: [
-            { name: 'خانه', link: '/home', Icon: <RiHome2Line />, id: 0 },
+            { name: 'خانه', link: '/', Icon: <RiHome2Line />, id: 0 },
             { name: 'جایزه ها', link: '/awards', Icon: <LiaCertificateSolid />, id: 1 },
             { name: 'سلبریتی ها', link: '/home2', Icon: <RiVipCrown2Line />, id: 2 },
         ],

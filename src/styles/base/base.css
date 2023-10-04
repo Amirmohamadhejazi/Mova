@@ -3,9 +3,5 @@ html {
 }
 
 body {
-    @apply h-full;
-}
-
-* {
-    @apply !font-inter;
+    @apply h-full; 
 }

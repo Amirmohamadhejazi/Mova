@@ -2,18 +2,18 @@ import { type TCategoriesDataHeader } from '..'
 
 export const categoriesData: TCategoriesDataHeader[] = [
     {
-        name: 'فیلم ها',
-        link: '/home/movies',
         id: 0,
+        name: 'فیلم های برتر',
+        link: '/category/movies',
     },
     {
-        name: 'برنامه های تلویزیونی',
-        link: '/home/tvshows',
         id: 1,
+        name: 'سریال های برتر',
+        link: '/category/tvshows',
     },
     {
-        name: 'انیمه',
-        link: '/home/anime',
         id: 2,
+        name: 'انیمه',
+        link: '/category/anime',
     },
 ]

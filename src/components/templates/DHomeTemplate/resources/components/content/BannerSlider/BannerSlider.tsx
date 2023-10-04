@@ -5,11 +5,7 @@ import { DSwiperMoviesLarge } from '@molecules/DSwipers'
 import { dataSwiper } from '../../..'
 
 const BannerSlider: FC = () => {
-    return (
-        <div>
-            <DSwiperMoviesLarge dataSwiper={dataSwiper} />
-        </div>
-    )
+    return <DSwiperMoviesLarge dataSwiper={dataSwiper} />
 }
 
 export default BannerSlider

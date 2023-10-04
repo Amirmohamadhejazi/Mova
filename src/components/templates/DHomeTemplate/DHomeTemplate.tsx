@@ -6,7 +6,7 @@ const DHomeTemplate: FC = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-8 flex-grow gap-x-2 w-full overflow-hidden text-dark-700 h-full gap-y-5 md:gap-y-0'>
             {/* content */}
-            <div className='col-span-1 md:col-span-6 flex flex-col mx-5 xl:mx-12 gap-y-5 md:gap-y-0'>
+            <div className='col-span-1 md:col-span-6 flex flex-col mx-5 xl:mx-12 gap-y-10 md:gap-y-10'>
                 <BannerSlider />
                 <CategoryContentMovies />
             </div>

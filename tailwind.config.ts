@@ -17,8 +17,9 @@ const config: Config = {
         colors: { ...COLORS },
         extend: {
             fontFamily: {
-                inter: ['var(--font-yekan)'],
+                sans: ['var(--font-yekan)'],
             },
+            backgroundImage : {'back' : "url('/public/images/comon/backgorund.pn')"}
         },
     },
     plugins: [],
