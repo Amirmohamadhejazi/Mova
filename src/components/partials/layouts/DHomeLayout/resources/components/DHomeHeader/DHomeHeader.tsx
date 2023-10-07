@@ -39,9 +39,6 @@ const DHomeHeader: FC = () => {
                     <div className='flex items-start gap-x-5'>
                         {categoriesData.map((items) => (
                             <HandlerLink key={items.id} items={items}>
-                                {/* Link Name */}
-                                {console.log(items?.link)}
-                                {console.log(pathname)}
                                 <h1
                                     className={`font-medium border-b-2 pb-1.5 px-2 ${
                                         pathname.includes(items?.link)
