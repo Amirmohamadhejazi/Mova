@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import { type FC, useState } from 'react'
 import { BsPlayCircle } from 'react-icons/bs'

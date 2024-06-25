@@ -33,7 +33,8 @@ const CategoryContentMovies: FC = () => {
                                             </div>
 
                                             <div className='flex justify-between items-center '>
-                                                <Link href={`/${items.category}/${items.id}`}>
+                                                <Link href={`/`}>
+                                                {/* <Link href={`/${items.category}/${items.id}`}> */}
                                                     <div className=' px-5 py-2 flex items-center justify-center cursor-pointer shadow-lg rounded-md bg-yellow-400 '>
                                                         <span className='text-dark-950 font-extrabold text-sm'>
                                                             اطلاعات بیشتر

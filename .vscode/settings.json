@@ -23,7 +23,7 @@
     },
     "prettier.configPath": ".prettierrc.json",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit"
     },
 
     // json formatter
