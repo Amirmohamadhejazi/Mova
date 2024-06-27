@@ -14,7 +14,7 @@ const DHomeSidebar: FC = () => {
     }
 
     return (
-        <aside className={`sticky top-0 shrink-0 lg:w-[250px]`}>
+        <aside className={`sticky top-24 shrink-0 lg:w-[250px]`}>
             <div className='flex flex-col h-full pt-6 gap-y-8'>
                 {tabsData.map((itemsMain: TDSidebarTabsDataProps) => (
                     <div className='flex flex-col' key={itemsMain.id}>

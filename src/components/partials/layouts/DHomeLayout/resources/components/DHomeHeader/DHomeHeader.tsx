@@ -29,7 +29,7 @@ const DHomeHeader: FC = () => {
     }
 
     return (
-        <div className='flex w-full mb-5 lg:mb-0 md:px-4 pt-5'>
+        <div className='flex w-full mb-5 lg:mb-0 md:px-4 pt-5 top-0 sticky bg-black z-10'>
             <div className={` shrink-0 block md:hidden lg:block  lg:w-[250px]`}>
                 <Image src={logoHeader} alt='logo' />
             </div>

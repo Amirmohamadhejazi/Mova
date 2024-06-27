@@ -10,7 +10,6 @@ import 'swiper/css'
 import 'swiper/css/scrollbar'
 
 const DSwiperCarts: FC<{ children: ReactNode }> = ({ children }) => {
-    console.log('rendered')
     const breakSwiper = {
         360: {
             slidesPerView: 1.4,

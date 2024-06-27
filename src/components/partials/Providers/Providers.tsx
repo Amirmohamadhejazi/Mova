@@ -3,9 +3,20 @@
 import { type FC } from 'react'
 import { useServerInsertedHTML } from 'next/navigation'
 import { createEmotionCache, MantineProvider } from '@mantine/core'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 import { type ILayoutProps } from '@core/types'
 import { mantineThemeObject, rtlCacheObject } from '@core/utils'
+
+// Create a new query client
+const queryClient = new QueryClient({
+    defaultOptions: {
+        queries: {
+            retry: false,
+            refetchOnWindowFocus: false,
+        },
+    },
+})
 
 const Providers: FC<ILayoutProps> = ({ children }) => {
     // Create an Emotion cache based on the rtl direction.
@@ -27,9 +38,11 @@ const Providers: FC<ILayoutProps> = ({ children }) => {
        Feel free to wrap anything u wants here. such as redux provider, persistGate, context provider, portals and etc.
     */
     return (
-        <MantineProvider emotionCache={cache} theme={mantineThemeObject}>
-            {children}
-        </MantineProvider>
+        <QueryClientProvider client={queryClient}>
+            <MantineProvider emotionCache={cache} theme={mantineThemeObject}>
+                {children}
+            </MantineProvider>
+        </QueryClientProvider>
     )
 }
 

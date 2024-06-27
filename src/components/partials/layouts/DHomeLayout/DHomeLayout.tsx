@@ -8,12 +8,14 @@ const DHomeLayout: FC<ILayoutProps> = ({ children }) => {
     return (
         <div className='xl:container transition-all duration-1000 mx-auto flex flex-col min-h-screen text-[#F9F9F9] '>
             <DHomeHeader />
-            <div className='w-full flex  md:px-4'>
+            <div className='w-full flex md:px-4'>
                 <div className='hidden lg:block '>
                     <DHomeSidebar />
                 </div>
 
-                <main className='flex-grow w-full overflow-hidden'>{children}</main>
+                {/* <main className='flex-grow w-full overflow-hidden'>{children}</main> */}
+
+                <div className='grow'>{children}</div>
             </div>
         </div>
     )
