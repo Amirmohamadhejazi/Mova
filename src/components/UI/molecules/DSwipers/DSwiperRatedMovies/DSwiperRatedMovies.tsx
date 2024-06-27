@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import { type FC } from 'react'
 import { HiPlus } from 'react-icons/hi'
@@ -20,6 +21,7 @@ const DSwiperRatedMovies: FC<IDataSwiperRatedMoviesProps> = ({ dataSwiper }) => 
             slidesPerView: 1,
         },
     }
+    console.log({ dataSwiper })
 
     return (
         <Swiper
@@ -30,10 +32,13 @@ const DSwiperRatedMovies: FC<IDataSwiperRatedMoviesProps> = ({ dataSwiper }) => 
         >
             {dataSwiper.map((itemsSwiper) => (
                 <SwiperSlide className='flex mt-3  relative' key={itemsSwiper.id}>
-                    <div
-                        className='filter brightness-50 h-[130px] w-full bg-center	 flex flex-col  text-white bg-cover  rounded'
-                        style={{ backgroundImage: `url('${itemsSwiper.banner.src}')` }}
-                    ></div>
+                    <div className='filter brightness-50  h-[130px] w-full'>
+                        <img
+                            alt={itemsSwiper.banner}
+                            src={itemsSwiper.banner}
+                            className='w-full h-full object-cover rounded-md '
+                        />
+                    </div>
                     <div className='absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full p-2 text-white'>
                         <div className='w-full flex gap-x-2'>
                             <div className='flex-grow flex flex-col gap-y-2'>

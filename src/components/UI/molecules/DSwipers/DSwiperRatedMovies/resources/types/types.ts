@@ -1,10 +1,8 @@
-import { type StaticImageData } from 'next/image'
-
 export type TRatedMoviesData = {
     name: string
     genre: string
     episode: number
-    banner: StaticImageData
+    banner: string
     id: number
 }
 export interface IDataSwiperRatedMoviesProps {

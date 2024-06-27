@@ -15,13 +15,13 @@ const DSwiperCarts: FC<{ children: ReactNode }> = ({ children }) => {
             slidesPerView: 1.4,
         },
         470: {
-            slidesPerView: 2.4,
+            slidesPerView: 2,
         },
         560: {
-            slidesPerView: 2.7,
+            slidesPerView: 2.3,
         },
         1200: {
-            slidesPerView: 3.2,
+            slidesPerView: 2.9,
         },
     }
 

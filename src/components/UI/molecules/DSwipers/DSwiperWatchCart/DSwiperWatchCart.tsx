@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import { type FC } from 'react'
-import Image from 'next/image'
 import { Progress } from '@mantine/core'
 // import required modules
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -22,6 +22,7 @@ const DSwiperWatchCart: FC<IDataSwiperWatchCartProps> = ({ dataSwiper }) => {
             slidesPerView: 1,
         },
     }
+
     return (
         <Swiper
             breakpoints={breakSwiper}
@@ -33,13 +34,11 @@ const DSwiperWatchCart: FC<IDataSwiperWatchCartProps> = ({ dataSwiper }) => {
                 <SwiperSlide className='    h-full' key={itemsSwiper.id}>
                     <div className='bg-[#16181E] flex flex-col text-white p-2   rounded '>
                         <div className='flex gap-x-2 '>
-                            <div>
-                                <Image
-                                    alt={itemsSwiper.banner.src}
-                                    src={itemsSwiper.banner.src}
-                                    width={80}
-                                    height={90}
-                                    className='h-full w-16 object-cover rounded-md '
+                            <div className='w-[80px] h-[90px]'>
+                                <img
+                                    alt={itemsSwiper.banner}
+                                    src={itemsSwiper.banner}
+                                    className='w-full h-full object-cover rounded-md '
                                 />
                             </div>
                             <div className='flex-grow flex flex-col gap-y-2'>

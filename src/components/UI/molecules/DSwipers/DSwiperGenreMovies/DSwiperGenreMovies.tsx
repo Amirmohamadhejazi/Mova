@@ -20,6 +20,7 @@ const DSwiperGenreMovies: FC<IDataSwiperGenreMoviesProps> = ({ dataSwiper }) => 
             slidesPerView: 1,
         },
     }
+    console.log(dataSwiper)
 
     return (
         <Swiper
@@ -33,7 +34,7 @@ const DSwiperGenreMovies: FC<IDataSwiperGenreMoviesProps> = ({ dataSwiper }) => 
                     <div className='flex mt-3 cursor-pointer relative'>
                         <div
                             className='filter brightness-50 h-[100px] w-full  text-white bg-cover  rounded'
-                            style={{ backgroundImage: `url('${itemsSwiper.genres[0].banner.src}')` }}
+                            style={{ backgroundImage: `url('${itemsSwiper.genres[0].banner}')` }}
                         ></div>
                         <div className='absolute left-1/2 top-1/2 transform text-center -translate-x-1/2 -translate-y-1/2 w-full p-2 text-white'>
                             <span className='text-lg font-bold'>{itemsSwiper.genres[0].genreName} </span>
@@ -43,7 +44,7 @@ const DSwiperGenreMovies: FC<IDataSwiperGenreMoviesProps> = ({ dataSwiper }) => 
                     <div className='flex mt-3  cursor-pointer  relative'>
                         <div
                             className='filter brightness-50 h-[100px] w-full  text-white bg-cover  rounded'
-                            style={{ backgroundImage: `url('${itemsSwiper.genres[1].banner.src}')` }}
+                            style={{ backgroundImage: `url('${itemsSwiper.genres[1].banner}')` }}
                         ></div>
                         <div className='absolute left-1/2 top-1/2 transform text-center -translate-x-1/2 -translate-y-1/2 w-full p-2 text-white'>
                             <span className='text-lg font-bold'>{itemsSwiper.genres[1].genreName} </span>

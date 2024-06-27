@@ -1,18 +1,16 @@
 import { type TGenreMoviesData } from '@molecules/DSwipers/DSwiperGenreMovies/resources'
 
-import { Annabel, dayShift, enolaHolmes2, interstellar, johnWick, rikThumbnail } from '@public/images/common'
-
 const dataSwiperGenreMovies: TGenreMoviesData[] = [
     {
         genres: [
             {
                 genreName: 'ترسناک',
-                banner: Annabel,
+                banner: 'Annabel',
                 id: 0,
             },
             {
                 genreName: 'اکشن',
-                banner: johnWick,
+                banner: 'johnWick',
                 id: 1,
             },
         ],
@@ -22,12 +20,12 @@ const dataSwiperGenreMovies: TGenreMoviesData[] = [
         genres: [
             {
                 genreName: 'انیمیشن',
-                banner: rikThumbnail,
+                banner: 'rikThumbnail',
                 id: 0,
             },
             {
                 genreName: 'علمی تخیلی',
-                banner: interstellar,
+                banner: 'interstellar',
                 id: 1,
             },
         ],
@@ -37,12 +35,12 @@ const dataSwiperGenreMovies: TGenreMoviesData[] = [
         genres: [
             {
                 genreName: 'ماجراجویی',
-                banner: enolaHolmes2,
+                banner: 'enolaHolmes2',
                 id: 0,
             },
             {
                 genreName: 'کمدی',
-                banner: dayShift,
+                banner: 'dayShift',
                 id: 1,
             },
         ],

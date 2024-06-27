@@ -13,8 +13,6 @@ const DHomeLayout: FC<ILayoutProps> = ({ children }) => {
                     <DHomeSidebar />
                 </div>
 
-                {/* <main className='flex-grow w-full overflow-hidden'>{children}</main> */}
-
                 <div className='grow'>{children}</div>
             </div>
         </div>

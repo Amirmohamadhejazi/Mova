@@ -1,7 +1,6 @@
-import { type StaticImageData } from 'next/image'
 export type TGenresMoviesData = {
     genreName: string
-    banner: StaticImageData
+    banner: string
     id: number
 }
 // DSwiperGenreMovies

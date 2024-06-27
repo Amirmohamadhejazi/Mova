@@ -1,10 +1,8 @@
-import { type StaticImageData } from 'next/image'
-
 export type TWatchCartData = {
     name: string
     episodeLeft: number
     Progress: number
-    banner: StaticImageData
+    banner: string
     id: number
 }
 export interface IDataSwiperWatchCartProps {
