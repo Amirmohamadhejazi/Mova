@@ -30,7 +30,7 @@ const DHomeHeader: FC = () => {
 
     return (
         <div className='flex w-full mb-5 lg:mb-0 md:px-4 pt-5 top-0 sticky bg-black z-10'>
-            <div className={` shrink-0 block md:hidden lg:block  lg:w-[250px]`}>
+            <div className={` shrink-0   lg:w-[250px]`}>
                 <Image src={logoHeader} alt='logo' />
             </div>
 
@@ -65,12 +65,11 @@ const DHomeHeader: FC = () => {
                 </div>
 
                 <div className='col-span-2 flex items-center justify-end md:justify-end xl:justify-between gap-6 text-center mx-5 md:mx-0'>
-                    <div className='p-2 bg-gray-700 text-white rounded-md cursor-pointer block lg:hidden'>
-                        <HiMenuAlt3
-                            size={20}
-                            className='text-primary transform rotate-45'
-                            onClick={() => setDrawer(true)}
-                        />
+                    <div
+                        className='p-2 bg-gray-700 text-white rounded-md cursor-pointer block lg:hidden'
+                        onClick={() => setDrawer(true)}
+                    >
+                        <HiMenuAlt3 size={20} className='text-primary transform rotate-45' />
                     </div>
                     <div
                         className='p-2 bg-gray-700 text-white rounded-md cursor-pointer relative hidden lg:block'
@@ -105,7 +104,12 @@ const DHomeHeader: FC = () => {
                         </Popover>
                     </div>
 
-                    <span className='hidden xl:block text-yellow-400  font-bold text-lg truncate' style={{direction:"ltr"}}>Amirmohamad</span>
+                    <span
+                        className='hidden xl:block text-yellow-400  font-bold text-lg truncate'
+                        style={{ direction: 'ltr' }}
+                    >
+                        Amirmohamad
+                    </span>
 
                     <div className='p-2 bg-gray-700 text-white rounded-md cursor-pointer hidden lg:block'>
                         <MdOutlineNotificationsActive size={20} className='text-primary transform rotate-45' />
@@ -125,12 +129,11 @@ const DHomeHeader: FC = () => {
                 }}
                 closeButtonProps={<AiOutlineCloseCircle />}
             >
-                <div className='absolute top-5 left-5 text-3xl text-gray-400'>
+                <div className='absolute top-5 left-5 text-3xl text-gray-400 cursor-pointer'>
                     <AiOutlineCloseCircle onClick={() => setDrawer(false)} />
                 </div>
 
                 <div className='flex items-start flex-col mt-12'>
-                    <span className='text-[#F9F9F9]  mb-2 font-light text-sm '>منوی فرعی</span>
                     <div className='px-2 flex items-start  flex-col'>
                         {categoriesData.map((items) => (
                             <HandlerLink key={items.id} items={items}>

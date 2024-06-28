@@ -1,5 +1,4 @@
-import { FiSettings } from 'react-icons/fi'
-import { HiOutlineLogout } from 'react-icons/hi'
+
 import { RiHome2Line, RiVipCrown2Line } from 'react-icons/ri'
 import { type TDSidebarTabsDataProps } from '..'
 
@@ -14,13 +13,6 @@ const tabsData: TDSidebarTabsDataProps[] = [
         id: 0,
         library: 'منو',
     },
-    {
-        items: [
-            { name: 'تنظیمات', link: '/setting', Icon: <FiSettings />, id: 0 },
-            { name: 'خروج', link: '/exit', Icon: <HiOutlineLogout />, id: 1 },
-        ],
-        id: 2,
-        library: 'عمومی',
-    },
+    ,
 ]
 export { tabsData }

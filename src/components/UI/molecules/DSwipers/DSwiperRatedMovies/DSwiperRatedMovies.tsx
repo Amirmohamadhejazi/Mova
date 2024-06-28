@@ -21,7 +21,6 @@ const DSwiperRatedMovies: FC<IDataSwiperRatedMoviesProps> = ({ dataSwiper }) => 
             slidesPerView: 1,
         },
     }
-    console.log({ dataSwiper })
 
     return (
         <Swiper

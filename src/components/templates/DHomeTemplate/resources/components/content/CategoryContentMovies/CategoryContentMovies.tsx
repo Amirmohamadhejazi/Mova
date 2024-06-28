@@ -20,7 +20,7 @@ const CategoryContentMovies: FC = () => {
         isSuccess: isSuccessGeneral,
         data: dataGeneral,
     } = useQuery({
-        queryKey: ['products'],
+        queryKey: ['general'],
         queryFn: () => fetch('https://6651de3f20f4f4c44278f8b0.mockapi.io/api/v1/general').then((res) => res.json()),
     })
 

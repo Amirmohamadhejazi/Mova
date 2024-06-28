@@ -20,7 +20,6 @@ const DSwiperGenreMovies: FC<IDataSwiperGenreMoviesProps> = ({ dataSwiper }) => 
             slidesPerView: 1,
         },
     }
-    console.log(dataSwiper)
 
     return (
         <Swiper

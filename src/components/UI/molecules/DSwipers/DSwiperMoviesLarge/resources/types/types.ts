@@ -1,4 +1,3 @@
-import { type StaticImageData } from 'next/image'
 import type React from 'react'
 
 export type TStyleSwiperMoviesLarge = React.CSSProperties & {
@@ -11,7 +10,7 @@ export type TStyleSwiperMoviesLarge = React.CSSProperties & {
 }
 export type TMovieData = {
     name: string
-    banner: StaticImageData
+    banner: string
     id: number
 }
 export interface IDataSwiperMoviesLargeProps {

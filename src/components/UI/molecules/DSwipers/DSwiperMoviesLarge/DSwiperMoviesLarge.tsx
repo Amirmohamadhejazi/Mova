@@ -36,7 +36,7 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
         '--swiper-pagination-bullet-inactive-opacity': '0.4',
         '--swiper-pagination-bullet-size': '10px',
         '--swiper-pagination-bullet-horizontal-gap': '4px',
-    }
+    } 
 
     return (
         <div>
@@ -52,7 +52,7 @@ const DSwiperMoviesLarge: FC<IDataSwiperMoviesLargeProps> = ({ dataSwiper }) => 
                 {dataSwiper.map((itemsSwipe) => {
                     return (
                         <SwiperSlide key={itemsSwipe.id}>
-                            <img src={itemsSwipe.banner.src} className='w-full h-full object-cover' alt='' />
+                            <img src={itemsSwipe.banner} className='w-full h-full object-cover' alt='img banner' />
                             <span className='absolute top-8 left-8 text-xl md:text-3xl font-bold  text-white'>
                                 {itemsSwipe.name}
                             </span>
