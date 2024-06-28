@@ -105,7 +105,7 @@ const DHomeHeader: FC = () => {
                         </Popover>
                     </div>
 
-                    <span className='hidden xl:block text-yellow-400  font-bold text-xl'>Anastasia </span>
+                    <span className='hidden xl:block text-yellow-400  font-bold text-lg truncate' style={{direction:"ltr"}}>Amirmohamad</span>
 
                     <div className='p-2 bg-gray-700 text-white rounded-md cursor-pointer hidden lg:block'>
                         <MdOutlineNotificationsActive size={20} className='text-primary transform rotate-45' />
