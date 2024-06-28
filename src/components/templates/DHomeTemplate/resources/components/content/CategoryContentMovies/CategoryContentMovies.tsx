@@ -43,7 +43,7 @@ const CategoryContentMovies: FC = () => {
                                         {dataGeneral[itemStructure.id].data.map((items) => (
                                             <SwiperSlide key={items.id}>
                                                 <div
-                                                    className='filter brightness-75 h-[250px] w-full bg-center	   text-white bg-cover  rounded'
+                                                    className='filter brightness-75 h-[250px] w-full object-cover object-top text-white bg-cover  rounded'
                                                     style={{ backgroundImage: `url('${items.banner}')` }}
                                                 ></div>
                                                 <div className='w-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-32  rounded-xl p-3 '>

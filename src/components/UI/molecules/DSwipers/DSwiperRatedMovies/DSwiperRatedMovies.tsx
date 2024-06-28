@@ -35,7 +35,7 @@ const DSwiperRatedMovies: FC<IDataSwiperRatedMoviesProps> = ({ dataSwiper }) => 
                         <img
                             alt={itemsSwiper.banner}
                             src={itemsSwiper.banner}
-                            className='w-full h-full object-cover rounded-md '
+                            className='w-full h-full object-cover object-top rounded-md '
                         />
                     </div>
                     <div className='absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full p-2 text-white'>

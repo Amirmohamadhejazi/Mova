@@ -38,7 +38,7 @@ const DSwiperWatchCart: FC<IDataSwiperWatchCartProps> = ({ dataSwiper }) => {
                                 <img
                                     alt={itemsSwiper.banner}
                                     src={itemsSwiper.banner}
-                                    className='w-full h-full object-cover rounded-md '
+                                    className='w-full h-full object-cover object-top rounded-md '
                                 />
                             </div>
                             <div className='flex-grow flex flex-col gap-y-2'>
